@@ -1,9 +1,51 @@
-// В этом файле должны быть стили для БЭМ-блока partner-projects, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .partner-projects {
+  padding-top: 48px;
+  padding-bottom: calc(48px - 32px);
+  //border-bottom: 1.5px solid $black;
+
+  @media (min-width: $screen-md) {
+    padding-top: 64px;
+    padding-bottom: calc(64px - 32px);
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__header {
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-md) {
+      max-width: calc(75% - 16px);
+    }
+
+    @media (min-width: $screen-xl) {
+      max-width: calc(50% - 16px);
+    }
+  }
+
+  &__col {
+    @include col(xs, 16);
+    @include col(sm, 8);
+    @include col(lg, 4);
+    margin-bottom: 32px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    //&:hover,
+    //&:focus {
+      //box-shadow: $shadow;
+    //}
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }
