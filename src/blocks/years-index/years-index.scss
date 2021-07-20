@@ -1,9 +1,54 @@
-// В этом файле должны быть стили для БЭМ-блока years-index, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .years-index {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1.5px solid $black;
+
+    @media (min-width: $screen-md) {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+  }
+
+  &__col {
+    @include col(xs, 16);
+    @include col(xl, 9);
+    @include col(xxl, 10);
+    margin-bottom: 48px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__header,
+  &__footer {
+
+    @media (min-width: $screen-md) {
+      max-width: calc(75% - 16px);
+    }
+
+    @media (min-width: $screen-xl) {
+      max-width: calc(100% - 100px);
+    }
+
+    @media (min-width: $screen-xxl) {
+      max-width: calc(100% - 210px);
+    }
+  }
+
+  &__header {
+    margin-bottom: 24px;
+  }
+
+  &__footer {
+    margin-top: 32px;
+  }
 }

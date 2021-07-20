@@ -1,8 +1,134 @@
-// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-header {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: $white;
+  background-color: $main-color;
+
+  @media (min-width: $screen-md) {
+    justify-content: space-between;
+  }
 
   $block-name:                &; // #{$block-name}__element
+
+  &__logo-col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1;
+    flex-basis: 100%;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      justify-content: flex-start;
+      flex-basis: 70%;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  &__dixi-col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1;
+    flex-basis: 100%;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      justify-content: flex-end;
+      flex-basis: 25%;
+      text-align: right;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+
+    span {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+  &__download-col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1;
+    flex-basis: 100%;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      justify-content: flex-start;
+      flex-basis: 70%;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  &__lang-col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1;
+    flex-basis: 100%;
+
+    @media (min-width: $screen-md) {
+      justify-content: flex-end;
+      flex-basis: 25%;
+      text-align: right;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: auto;
+    }
+  }
+
+  &__download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 3.5px;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: nowrap;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+
+    span {
+
+      &:first-child {
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin-right: 12px;
+      }
+    }
+
+    &--mod {
+      padding: 8px 16px;
+      color: $white;
+      background-color: $main-color;
+      border-radius: $border-radius;
+
+      @media (min-width: $screen-xxl) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  }
 }

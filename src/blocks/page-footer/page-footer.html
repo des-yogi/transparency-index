@@ -1,11 +1,73 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer" role="contentinfo">
-  page-footer
+<footer class="container  page-footer" role="contentinfo">
+  <div class="row">
+
+    <div class="page-footer__links-col">
+      <ul class="list-nostyled  row  page-footer__links">
+        <li class="page-footer__links-item">
+          <span>
+            <a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Яка мета Індексу?</a>
+          </span>
+        </li>
+        <li class="page-footer__links-item">
+          <span>
+            <a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Оцінка прозорості за категоріями</a>
+          </span>
+        </li>
+        <li class="page-footer__links-item">
+          <span>
+            <a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Оцінка прозорості за секторами</a>
+          </span>
+        </li>
+        <li class="page-footer__links-item">
+          <span><a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Структура індексу прозорості</a></span>
+        </li>
+        <li class="page-footer__links-item">
+          <span><a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Індекс по рокам</a></span>
+        </li>
+        <li class="page-footer__links-item">
+          <span><a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Аналіз за категоріями</a></span>
+        </li>
+        <li class="page-footer__links-item">
+          <span><a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Органи влади</a></span>
+        </li>
+        <li class="page-footer__links-item">
+          <span><a href="#" class="page-footer__link">Завантажити індикатори</a></span>
+        </li>
+      </ul>
+      <p class="page-footer__mail-wrapper">
+        <a href="mailto:author@dixigroup.org" class="page-footer__link  page-footer__link--mail">
+          <svg width="26" height="20" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#envelope"></use></svg>
+          <span>author@dixigroup.org</span>
+        </a>
+      </p>
+    </div>
+
+    <div class="page-footer__about-col">
+      <p class="page-footer__about-text">Робота веб-сайту стала можливою завдяки підтримці американського народу через Агентство США з міжнародного розвитку (USAID). За зміст інформації несе виключну відповідальність DiXi Group, він не обов'язково відображає погляди USAID або Уряду Сполучених Штатів.</p>
+      <div class="page-footer__about-logo">
+        <a href="#" class="page-footer__about-link" title="USAID" target="_blank" rel="nofollow">
+          <img src="img/usaid.png" alt="USAID logo" width="120" height="36" loading="lazy">
+          <span class="visually-hidden">USAID</span>
+        </a>
+        <a href="#" class="page-footer__about-link" title="dixigroup" target="_blank" rel="nofollow">
+          <img src="img/dixi-group.png" alt="dixigroup logo" width="135" height="30" loading="lazy">
+          <span class="visually-hidden">dixigroup</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="page-footer__copyrights-col">
+      <div class="copyrights">
+        <span class="copyrights__owner">©&thinsp;2021. Індекс Прозорості Енергетики</span>
+        <a href="#" class="copyrights__dev" target="_blank" rel="nofollow">
+          <img src="img/itdoors-logo.svg" alt="IT-Doors Outsourcing logo" width="85" height="32">
+        </a>
+      </div>
+    </div>
+
+  </div>
 </footer>

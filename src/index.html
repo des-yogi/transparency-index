@@ -19,6 +19,605 @@
 
         <div class="container">
 
+          <section class="intro">
+            <h1 id="goal" class="intro__title">
+              <span class="visually-hidden">Індекс Прозорості Енергетики</span>
+              Яка мета Індексу?
+            </h1>
+
+            <div class="intro__text">
+              <p>Індекс прозорості енергетики, з одного боку, є кінцевим продуктом, що надає інтегральну оцінку інформаційній відкритості енергетичного сектору країни, а з іншого – універсальним інструментом, що дозволяє докладно аналізувати прозорість за окремими категоріями, критеріями і ринками, а також бачити прогрес як у динаміці, так і в порівнянні з іншими країнами.</p>
+              <p>Індекс дає кількісну оцінку і характеризує спроможність споживачів, органів влади, енергетичних компаній, іноземних інституційних партнерів, потенційних інвесторів, медіа, експертів отримувати необхідну їм інформацію про функціонування й розвиток енергетичного сектору за ланцюжком «від виробника до споживача».</p>
+            </div>
+
+          </section>
+
+          <div class="years-index__wrapper">
+            <div class="row">
+
+              <div class="years-index__col">
+                <section class="years-index">
+                  <div class="years-index__header">
+                    <h2 class="h3">Індекс по рокам</h2>
+                    <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
+                  </div>
+
+                  <p><strong>[Диаграмма]</strong></p>
+
+                  <div class="years-index__footer">
+                    <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis. Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis. Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
+                  </div>
+                </section>
+              </div>
+
+              <div class="score-interpretation__col">
+                <section class="score-interpretation">
+                  <div class="score-interpretation__header">
+                    <h2 class="h3">Інтерпретація оцінок</h2>
+                    <p>Усі розраховані індекси переведені у стобальну шкалу як 25Ti із заокругленням і таким трактуванням відповідності:</p>
+                  </div>
+                  <figure class="score-interpretation__figure">
+                    <img src="img/score-diagram.svg" alt="Описание" width="505" height="697" loading="lazy">
+                  </figure>
+                </section>
+              </div>
+
+            </div>
+          </div>
+
+          <section class="category-index">
+            <div class="category-index__header">
+              <h2 class="h3">Оцінки прозорості за категоріями</h2>
+              <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
+
+              <div class="category-index__btn-wrapper  checkbox-btn__wrapper">
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "checkbox",
+                  "prefix": "year",
+                  "label": "2018",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "checkbox",
+                  "prefix": "year",
+                  "label": "2019",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "checkbox",
+                  "prefix": "year",
+                  "label": "2020",
+                  "checked": "checked"
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "checkbox",
+                  "prefix": "year",
+                  "label": "2021",
+                  "checked": ""
+                })
+              </div>
+            </div>
+
+            <div class="category-index__diagram-wrapper">
+              <strong>[Диаграмма]</strong>
+            </div>
+          </section>
+
+          <section class="category-analysis">
+            <div class="category-analysis__header">
+              <h2 class="h3">Аналіз за категоріями</h2>
+              <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
+
+              <div class="category-analysis__btn-wrapper  checkbox-btn__wrapper">
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "analysis",
+                  "label": "2018",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "analysis",
+                  "label": "2019",
+                  "checked": "checked"
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "analysis",
+                  "label": "2020",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "analysis",
+                  "label": "2021",
+                  "checked": ""
+                })
+              </div>
+            </div>
+
+            <div class="category-analysis__diagram-wrapper">
+              <strong>[Диаграмма]</strong>
+            </div>
+          </section>
+
+          <section class="transparency-score">
+            <div class="transparency-score__header">
+              <h2 class="h3">Оцінки прозорості за секторами (ринками):</h2>
+              <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
+
+              <div class="transparency-score__btn-wrapper  checkbox-btn__wrapper">
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2018",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2019",
+                  "checked": "checked"
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2020",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2021",
+                  "checked": ""
+                })
+              </div>
+            </div>
+
+            <div class="transparency-score__table-wrapper">
+              <table class="table transparency-score__table">
+                <tr>
+                  <th rowspan="2">Секторальні індекси</th>
+                  <th>Природний газ</th>
+                  <th>Електрична енергія</th>
+                  <th>Нафта й рідке паливо</th>
+                  <th>Енергетичне вугілля</th>
+                  <th>Теплова енергія</th>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar d" style="width:46%" role="progressbar" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">46</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar d-plus" style="width:50%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">50</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar c" style="width:62%" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">62</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar c-plus" style="width:66%" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">66</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="top-border"><span>1.&nbsp;Баланси</span></td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar a-plus" style="width:97%" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">97</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar a-minus" style="width:86%" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">86</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar b-plus" style="width:82%" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">82</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar b-minus" style="width:71%" role="progressbar" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">71</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar c-minus" style="width:59%" role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">59</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="top-border"><span>2.&nbsp;Природні монополії</span></td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar d-minus" style="width:43%" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">43</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="top-border"><span>3.&nbsp;Постачання</span></td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="top-border"><span>4.&nbsp;Надійність і безпека</span></td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="top-border"><span>5.&nbsp;Споживання</span></td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="transparency-score__bar-wrapper">
+                      <span class="transparency-score__bar f" style="width:30%" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      </span>
+                      <span class="transparency-score__value">30</span>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </section>
+
+          <section class="different-authorities">
+            <div class="different-authorities__header">
+              <h2 class="h3">Органи влади</h2>
+              <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
+
+              <div class="different-authorities__btn-wrapper  checkbox-btn__wrapper">
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2018",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2019",
+                  "checked": "checked"
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2020",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2021",
+                  "checked": ""
+                })
+              </div>
+            </div>
+
+            <div class="different-authorities__diagram-wrapper">
+              <strong>[Диаграмма]</strong>
+            </div>
+          </section>
+
+          <section class="index-structure">
+            <div class="index-structure__header">
+              <h2 class="h3">Структура індексу прозорості</h2>
+              <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
+
+              <div class="index-structure__btn-wrapper  checkbox-btn__wrapper">
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2018",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2019",
+                  "checked": "checked"
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2020",
+                  "checked": ""
+                })
+                @@include('blocks/checkbox-btn/checkbox-btn.html', {
+                  "type": "radio",
+                  "prefix": "score",
+                  "label": "2021",
+                  "checked": ""
+                })
+              </div>
+            </div>
+
+            <div class="index-structure__diagram-wrapper">
+              <strong>[Диаграмма]</strong>
+            </div>
+          </section>
+
+          <section class="years-transparency-index">
+            <div class="years-transparency-index__header">
+              <h2 class="h3">Індекс прозорості енергетики України по рокам</h2>
+              <p>Подивитись PDF документи</p>
+            </div>
+
+            <div class="row">
+
+              <div class="years-transparency-index__col">
+                <a href="#" class="years-transparency-index__img" title="Заголовок 1">
+                  <picture>
+                    <source srcset="img/transparency-index-2018.webp" type="image/webp">
+                    <img src="img/transparency-index-2018.jpg" alt="Описание" width="447" height="518" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+                <p class="years-transparency-index__descr"><span>2018.pdf</span></p>
+              </div>
+
+              <div class="years-transparency-index__col">
+                <a href="#" class="years-transparency-index__img" title="Заголовок 2">
+                  <picture>
+                    <source srcset="img/transparency-index-2019.webp" type="image/webp">
+                    <img src="img/transparency-index-2019.jpg" alt="Описание" width="447" height="518" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+                <p class="years-transparency-index__descr"><span>2019.pdf</span></p>
+              </div>
+
+              <div class="years-transparency-index__col">
+                <a href="#" class="years-transparency-index__img"  title="Заголовок 3">
+                  <picture>
+                    <source srcset="img/transparency-index-2020.webp" type="image/webp">
+                    <img src="img/transparency-index-2020.jpg" alt="Описание" width="447" height="518" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+                <p class="years-transparency-index__descr"><span>2020.pdf</span></p>
+              </div>
+
+              <div class="years-transparency-index__col">
+                <div class="years-transparency-index__img" role="presentation">
+                  <picture>
+                    <!-- <source srcset="img/transparency-index-2018.webp" type="image/webp"> -->
+                    <img src="img/transparency-index-2021.svg" alt="Описание" width="447" height="518" loading="lazy" decoding="async">
+                  </picture>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="years-transparency-index__downloads">
+              <div class="years-transparency-index__downloads-inner">
+                <p>Всі оцінки за індикаторами з відповідними коментарями та посиланнями можна знайти в окремій таблиці.</p>
+              </div>
+              <button class="page-header__download-btn  page-header__download-btn--mod" type="button">
+                <span>
+                  <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"></use></svg>
+                </span>
+                <span>Отримати таблиці індикаторів</span>
+              </button>
+            </div>
+
+          </section>
+
+          <section class="partner-projects">
+            <div class="partner-projects__header">
+              <h2 class="h3">Партнерські проекти </h2>
+              <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque.</p>
+            </div>
+
+            <div class="row">
+
+              <div class="partner-projects__col">
+                <a href="#" class="partner-projects__img" title="Заголовок 1">
+                  <picture>
+                    <source srcset="img/project-01.webp" type="image/webp">
+                    <img src="img/project-01.jpg" alt="Описание" width="447" height="217" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="partner-projects__col">
+                <a href="#" class="partner-projects__img" title="Заголовок 1">
+                  <picture>
+                    <source srcset="img/project-02.webp" type="image/webp">
+                    <img src="img/project-02.jpg" alt="Описание" width="447" height="217" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="partner-projects__col">
+                <a href="#" class="partner-projects__img" title="Заголовок 1">
+                  <picture>
+                    <source srcset="img/project-03.webp" type="image/webp">
+                    <img src="img/project-03.jpg" alt="Описание" width="447" height="217" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="partner-projects__col">
+                <a href="#" class="partner-projects__img" title="Заголовок 1">
+                  <picture>
+                    <source srcset="img/project-04.webp" type="image/webp">
+                    <img src="img/project-04.jpg" alt="Описание" width="447" height="217" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="partner-projects__col">
+                <a href="#" class="partner-projects__img" title="Заголовок 1">
+                  <picture>
+                    <source srcset="img/project-05.webp" type="image/webp">
+                    <img src="img/project-05.jpg" alt="Описание" width="447" height="217" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="partner-projects__col">
+                <a href="#" class="partner-projects__img" title="Заголовок 1">
+                  <picture>
+                    <source srcset="img/project-06.webp" type="image/webp">
+                    <img src="img/project-06.jpg" alt="Описание" width="447" height="217" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+              </div>
+
+            </div>
+          </section>
 
         </div>
 

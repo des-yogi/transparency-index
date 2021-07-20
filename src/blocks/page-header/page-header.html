@@ -2,6 +2,38 @@
 @ @include('blocks/page-header/page-header.html')
 -->
 
-<header class="page-header">
-  Header
+<header class="container  page-header">
+
+  <div class="page-header__logo-col">
+    <span class="logo">
+      <img src="img/index-logo.svg" alt="Index logo" width="500" height="32">
+    </span>
+  </div>
+
+  <div class="page-header__dixi-col">
+    <span>
+      <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">
+    </span>
+  </div>
+
+  <div class="page-header__download-col">
+    <button class="page-header__download-btn" type="button">
+      <span>
+        <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"></use></svg>
+      </span>
+      <span>Отримати таблиці індикаторів</span>
+    </button>
+  </div>
+
+  <div class="page-header__lang-col">
+    <ul class="list-nostyled  lang-switcher">
+      <li class="lang-switcher__item  active">
+        <a href="#" class="lang-switcher__link">Укр</a>
+      </li>
+      <li class="lang-switcher__item">
+        <a href="#" class="lang-switcher__link">Eng</a>
+      </li>
+    </ul>
+  </div>
+
 </header>

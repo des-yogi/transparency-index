@@ -1,7 +1,3 @@
-// В этом файле должны быть стили для БЭМ-блока table, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, $media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 $gray-lightest:               hsl(0, 0%, 90%) !default;
 
 $text-color--muted:           hsl(0, 0%, 50%) !default;
@@ -35,7 +31,7 @@ $field-padding-horizontal:    0.7em !default;
 
   td,
   th {
-    padding: $field-padding-vertical $field-padding-horizontal;
+    padding: $field-padding-vertical 8px;
     vertical-align: top;
     border-bottom: 1px solid $border-color;
 
@@ -47,10 +43,4 @@ $field-padding-horizontal:    0.7em !default;
   th {
     text-align: left;
   }
-
-  &__header {}
-
-  &__body {}
-
-  &__footer {}
 }

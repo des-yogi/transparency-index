@@ -26,7 +26,8 @@
     "score-interpretation": [],
     "field-checkbox": [],
     "field-radio": [],
-    "text-input": []
+    "text-input": [],
+    "checkbox-btn": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

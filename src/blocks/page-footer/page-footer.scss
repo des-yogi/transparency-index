@@ -1,8 +1,104 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-footer {
+  padding-top: 48px;
+  padding-bottom: 16px;
+  color: $white;
+  background-color: $main-color;
 
   $block-name:                &; // #{$block-name}__element
+
+  &__links-col {
+    @include col(xs, 16);
+    @include col(xl, 10);
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__about-col {
+    @include col(xs, 16);
+    @include col(xl, 6);
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__copyrights-col {
+    @include col(xs, 16);
+  }
+
+  &__links-item {
+    @include col(xs, 16);
+    @include col(md, 8);
+
+    &:nth-last-child(-n+2) {
+
+      span {
+
+        @media (min-width: $screen-md) {
+          border-bottom: none;
+        }
+      }
+    }
+
+    span {
+      display: block;
+      border-bottom: 1.5px solid rgba($white, 0.15);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 12px 0;
+    color: inherit !important;
+
+    &--mail {
+      display: inline-flex;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: none;
+
+      span {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  &__mail-wrapper {
+    border-bottom: 1.5px solid rgba($white, 0.15);
+
+    @media (min-width: $screen-md) {
+      border-top: 1.5px solid rgba($white, 0.15);
+    }
+
+    @media (min-width: $screen-xl) {
+      border-bottom: none;
+    }
+  }
+
+  &__about-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+    @media (min-width: $screen-xl) {
+      margin-top: 24px;
+    }
+  }
+
+  &__about-text {
+    font-size: $font-size-sm;
+    line-height: 1.75;
+  }
+
+  &__about-link {
+
+    & + & {
+      margin-left: 16px;
+    }
+  }
 }
