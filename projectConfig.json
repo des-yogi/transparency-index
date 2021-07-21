@@ -27,7 +27,9 @@
     "field-checkbox": [],
     "field-radio": [],
     "text-input": [],
-    "checkbox-btn": []
+    "checkbox-btn": [],
+    "get-table-modal": [],
+    "page-404": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
