@@ -99,15 +99,23 @@
   &__download-btn {
     display: inline-flex;
     align-items: center;
-    padding: 3.5px;
+    padding: 5px 12px;
     font-family: inherit;
     font-size: inherit;
     white-space: nowrap;
     color: inherit;
-    background: none;
-    border: none;
+    background-color: $main-color;
+    border: 2px solid $main-color;
+    border-radius: $border-radius;
     cursor: pointer;
     user-select: none;
+
+    &:hover,
+    &:focus {
+      color: $text-color;
+      background-color: $white;
+      box-shadow: $shadow;
+    }
 
     span {
 
@@ -123,7 +131,7 @@
       padding: 8px 16px;
       color: $white;
       background-color: $main-color;
-      border-radius: $border-radius;
+
 
       @media (min-width: $screen-xxl) {
         padding-left: 24px;

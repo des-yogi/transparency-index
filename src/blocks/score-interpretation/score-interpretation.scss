@@ -21,7 +21,9 @@
   }
 
   &__figure {
+    padding-bottom: 16px;
     margin: 0;
+    overflow-x: auto;
 
     @media (min-width: $screen-md) {
       max-width: calc(75% - 16px);
@@ -29,6 +31,10 @@
 
     @media (min-width: $screen-xl) {
       max-width: 100%;
+    }
+
+    img {
+      min-width: 390px;
     }
   }
 }

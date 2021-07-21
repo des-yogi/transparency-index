@@ -25,6 +25,8 @@ const size = require('gulp-size');
 const del = require('del');
 const newer = require('gulp-newer');
 
+// mkcert = require('mkcert'); //сервер сертификазии ssl
+
 // Получение настроек проекта из projectConfig.json
 let projectConfig = require('./projectConfig.json');
 let dirs = projectConfig.dirs;
@@ -488,6 +490,10 @@ gulp.task('serve', gulp.series('build', function() {
 
   browserSync.init({
     server: dirs.buildPath,
+    // https: {
+    //   key: cert.key,
+    //   cert: cert.cert
+    // },
     port: 3000,
     startPath: 'index.html',
     open: true,

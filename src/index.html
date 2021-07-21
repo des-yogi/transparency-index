@@ -36,7 +36,7 @@
             <div class="row">
 
               <div class="years-index__col">
-                <section class="years-index">
+                <section id="years-index" class="years-index">
                   <div class="years-index__header">
                     <h2 class="h3">Індекс по рокам</h2>
                     <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
@@ -65,7 +65,7 @@
             </div>
           </div>
 
-          <section class="category-index">
+          <section id="category-index" class="category-index">
             <div class="category-index__header">
               <h2 class="h3">Оцінки прозорості за категоріями</h2>
               <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
@@ -103,7 +103,7 @@
             </div>
           </section>
 
-          <section class="category-analysis">
+          <section id="category-analysis" class="category-analysis">
             <div class="category-analysis__header">
               <h2 class="h3">Аналіз за категоріями</h2>
               <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
@@ -141,7 +141,7 @@
             </div>
           </section>
 
-          <section class="transparency-score">
+          <section id="transparency-score" class="transparency-score">
             <div class="transparency-score__header">
               <h2 class="h3">Оцінки прозорості за секторами (ринками):</h2>
               <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
@@ -415,7 +415,7 @@
             </div>
           </section>
 
-          <section class="different-authorities">
+          <section id="different-authorities" class="different-authorities">
             <div class="different-authorities__header">
               <h2 class="h3">Органи влади</h2>
               <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
@@ -423,25 +423,25 @@
               <div class="different-authorities__btn-wrapper  checkbox-btn__wrapper">
                 @@include('blocks/checkbox-btn/checkbox-btn.html', {
                   "type": "radio",
-                  "prefix": "score",
+                  "prefix": "authorities",
                   "label": "2018",
                   "checked": ""
                 })
                 @@include('blocks/checkbox-btn/checkbox-btn.html', {
                   "type": "radio",
-                  "prefix": "score",
+                  "prefix": "authorities",
                   "label": "2019",
                   "checked": "checked"
                 })
                 @@include('blocks/checkbox-btn/checkbox-btn.html', {
                   "type": "radio",
-                  "prefix": "score",
+                  "prefix": "authorities",
                   "label": "2020",
                   "checked": ""
                 })
                 @@include('blocks/checkbox-btn/checkbox-btn.html', {
                   "type": "radio",
-                  "prefix": "score",
+                  "prefix": "authorities",
                   "label": "2021",
                   "checked": ""
                 })
@@ -453,7 +453,7 @@
             </div>
           </section>
 
-          <section class="index-structure">
+          <section id="index-structure" class="index-structure">
             <div class="index-structure__header">
               <h2 class="h3">Структура індексу прозорості</h2>
               <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
@@ -461,25 +461,25 @@
               <div class="index-structure__btn-wrapper  checkbox-btn__wrapper">
                 @@include('blocks/checkbox-btn/checkbox-btn.html', {
                   "type": "radio",
-                  "prefix": "score",
+                  "prefix": "index",
                   "label": "2018",
                   "checked": ""
                 })
                 @@include('blocks/checkbox-btn/checkbox-btn.html', {
                   "type": "radio",
-                  "prefix": "score",
+                  "prefix": "index",
                   "label": "2019",
                   "checked": "checked"
                 })
                 @@include('blocks/checkbox-btn/checkbox-btn.html', {
                   "type": "radio",
-                  "prefix": "score",
+                  "prefix": "index",
                   "label": "2020",
                   "checked": ""
                 })
                 @@include('blocks/checkbox-btn/checkbox-btn.html', {
                   "type": "radio",
-                  "prefix": "score",
+                  "prefix": "index",
                   "label": "2021",
                   "checked": ""
                 })
@@ -544,7 +544,7 @@
               <div class="years-transparency-index__downloads-inner">
                 <p>Всі оцінки за індикаторами з відповідними коментарями та посиланнями можна знайти в окремій таблиці.</p>
               </div>
-              <button class="page-header__download-btn  page-header__download-btn--mod" type="button">
+              <button class="page-header__download-btn  page-header__download-btn--mod" type="button" data-toggle="modal" data-target="#getTableModal">
                 <span>
                   <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"></use></svg>
                 </span>
@@ -630,6 +630,8 @@
     </div>
 
   </div>
+
+  @@include('blocks/get-table-modal/get-table-modal.html')
 
   @@include('_include/page_bottom.html')
 
