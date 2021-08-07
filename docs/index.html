@@ -26,38 +26,7 @@
 <body>
 <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
   <div class="page__inner">
-    <div class="page__content">
-      <header class="container  page-header">
-        <div class="page-header__logo-col">
-          <span class="logo">
-            <img src="img/index-logo.svg" alt="Index logo" width="500" height="32">
-          </span>
-        </div>
-        <div class="page-header__dixi-col">
-          <span>
-            <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">
-          </span>
-        </div>
-        <div class="page-header__download-col">
-          <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">
-            <span>
-              <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>
-            </span>
-            <span>Отримати таблиці індикаторів</span>
-          </button>
-        </div>
-        <div class="page-header__lang-col">
-          <ul class="list-nostyled  lang-switcher">
-            <li class="lang-switcher__item  active">
-              <a href="#" class="lang-switcher__link">Укр</a>
-            </li>
-            <li class="lang-switcher__item">
-              <a href="#" class="lang-switcher__link">Eng</a>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <main role="main">
+    <div class="page__content">      <header class="container  page-header">        <div class="page-header__logo-col">          <span class="logo">            <img src="img/index-logo.svg" alt="Index logo" width="500" height="32">          </span>        </div>        <div class="page-header__dixi-col">          <span>            <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">          </span>        </div>        <div class="page-header__download-col">          <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">            <span>              <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>            </span>            <span>Отримати таблиці індикаторів</span>          </button>        </div>        <div class="page-header__lang-col">          <ul class="list-nostyled  lang-switcher">            <li class="lang-switcher__item  active">              <a href="#" class="lang-switcher__link">Укр</a>            </li>            <li class="lang-switcher__item">              <a href="#" class="lang-switcher__link">Eng</a>            </li>          </ul>        </div>      </header>      <main role="main">
         <div class="container">
           <section class="intro">
             <h1 id="goal" class="intro__title">
@@ -101,7 +70,7 @@
               <h2 class="h3">Оцінки прозорості за категоріями</h2>
               <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
               <div class="category-index__btn-wrapper  checkbox-btn__wrapper">
-                  <div class="checkbox-btn">
+                <div class="checkbox-btn">
                   <input class="checkbox-btn__input  visually-hidden" id="year-2018" type="checkbox" name="year" value>
                   <label class="checkbox-btn__label  btn" for="year-2018">2018</label>
                 </div>
@@ -418,14 +387,6 @@
               <h2 class="h3">Органи влади</h2>
               <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
               <div class="different-authorities__btn-wrapper  checkbox-btn__wrapper">
-                <!--DEV
-                @ @include('blocks/checkbox-btn/checkbox-btn.html', {
-                  "type": "checkbox",
-                  "prefix": "",
-                  "label": "",
-                  "checked": ""
-                })
-                -->
                 <div class="checkbox-btn">
                   <input class="checkbox-btn__input  visually-hidden" id="authorities-2018" type="radio" name="authorities" value>
                   <label class="checkbox-btn__label  btn" for="authorities-2018">2018</label>
@@ -453,14 +414,6 @@
               <h2 class="h3">Структура індексу прозорості</h2>
               <p>Текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat habitant diam, consectetur convallis scelerisque. Sed fringilla orci nibh a at integer. Morbi adipiscing malesuada elit et eget duis.</p>
               <div class="index-structure__btn-wrapper  checkbox-btn__wrapper">
-                <!--DEV
-                @ @include('blocks/checkbox-btn/checkbox-btn.html', {
-                  "type": "checkbox",
-                  "prefix": "",
-                  "label": "",
-                  "checked": ""
-                })
-                -->
                 <div class="checkbox-btn">
                   <input class="checkbox-btn__input  visually-hidden" id="index-2018" type="radio" name="index" value>
                   <label class="checkbox-btn__label  btn" for="index-2018">2018</label>
@@ -479,9 +432,7 @@
                 </div>
               </div>
             </div>
-            <div class="index-structure__diagram-wrapper">
-              <strong>[Диаграмма]</strong>
-            </div>
+            <div id="index-structure-table" class="index-structure__diagram-wrapper"></div>
           </section>
           <section class="years-transparency-index">
             <div class="years-transparency-index__header">
@@ -596,80 +547,8 @@
         </div>
       </main>
     </div>
-    <div class="page__footer-wrapper">
-      <!--DEV
-      @ @include('blocks/page-footer/page-footer.html')
-      -->
-      <footer class="container  page-footer" role="contentinfo">
-        <div class="row">
-          <div class="page-footer__links-col">
-            <ul class="list-nostyled  row  page-footer__links">
-              <li class="page-footer__links-item">
-                <span>
-                  <a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Яка мета Індексу?</a>
-                </span>
-              </li>
-              <li class="page-footer__links-item">
-                <span><a href="#years-index" class="scroll-link  page-footer__link" data-scroll-link>Індекс по рокам</a></span>
-              </li>
-              <li class="page-footer__links-item">
-                <span>
-                  <a href="#category-index" class="scroll-link  page-footer__link" data-scroll-link>Оцінка прозорості за категоріями</a>
-                </span>
-              </li>
-              <li class="page-footer__links-item">
-                <span><a href="#category-analysis" class="scroll-link  page-footer__link" data-scroll-link>Аналіз за категоріями</a></span>
-              </li>
-              <li class="page-footer__links-item">
-                <span>
-                  <a href="#transparency-score" class="scroll-link  page-footer__link" data-scroll-link>Оцінка прозорості за секторами</a>
-                </span>
-              </li>
-              <li class="page-footer__links-item">
-                <span><a href="#different-authorities" class="scroll-link  page-footer__link" data-scroll-link>Органи влади</a></span>
-              </li>
-              <li class="page-footer__links-item">
-                <span><a href="#index-structure" class="scroll-link  page-footer__link" data-scroll-link>Структура індексу прозорості</a></span>
-              </li>
-              <li class="page-footer__links-item">
-                <span><a href="#getTableModal" class="page-footer__link" data-toggle="modal">Завантажити індикатори</a></span>
-              </li>
-            </ul>
-            <p class="page-footer__mail-wrapper">
-              <a href="mailto:author@dixigroup.org" class="page-footer__link  page-footer__link--mail">
-                <svg width="26" height="20" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#envelope"/></svg>
-                <span>author@dixigroup.org</span>
-              </a>
-            </p>
-          </div>
-          <div class="page-footer__about-col">
-            <p class="page-footer__about-text">Робота веб-сайту стала можливою завдяки підтримці американського народу через Агентство США з міжнародного розвитку (USAID). За зміст інформації несе виключну відповідальність DiXi Group, він не обов'язково відображає погляди USAID або Уряду Сполучених Штатів.</p>
-            <div class="page-footer__about-logo">
-              <a href="#" class="page-footer__about-link" title="USAID" target="_blank" rel="nofollow">
-                <img src="img/usaid.png" alt="USAID logo" width="120" height="36" loading="lazy">
-                <span class="visually-hidden">USAID</span>
-              </a>
-              <a href="#" class="page-footer__about-link" title="dixigroup" target="_blank" rel="nofollow">
-                <img src="img/dixi-group.png" alt="dixigroup logo" width="135" height="30" loading="lazy">
-                <span class="visually-hidden">dixigroup</span>
-              </a>
-            </div>
-          </div>
-          <div class="page-footer__copyrights-col">
-            <div class="copyrights">
-              <span class="copyrights__owner">©&thinsp;2021. Індекс Прозорості Енергетики</span>
-              <a href="#" class="copyrights__dev" target="_blank" rel="nofollow">
-                <img src="img/itdoors-logo.svg" alt="IT-Doors Outsourcing logo" width="85" height="32">
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+    <div class="page__footer-wrapper">      <footer class="container  page-footer" role="contentinfo">        <div class="row">          <div class="page-footer__links-col">            <ul class="list-nostyled  row  page-footer__links">              <li class="page-footer__links-item">                <span>                  <a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Яка мета Індексу?</a>                </span>              </li>              <li class="page-footer__links-item">                <span><a href="#years-index" class="scroll-link  page-footer__link" data-scroll-link>Індекс по рокам</a></span>              </li>              <li class="page-footer__links-item">                <span>                  <a href="#category-index" class="scroll-link  page-footer__link" data-scroll-link>Оцінка прозорості за категоріями</a>                </span>              </li>              <li class="page-footer__links-item">                <span><a href="#category-analysis" class="scroll-link  page-footer__link" data-scroll-link>Аналіз за категоріями</a></span>              </li>              <li class="page-footer__links-item">                <span>                  <a href="#transparency-score" class="scroll-link  page-footer__link" data-scroll-link>Оцінка прозорості за секторами</a>                </span>              </li>              <li class="page-footer__links-item">                <span><a href="#different-authorities" class="scroll-link  page-footer__link" data-scroll-link>Органи влади</a></span>              </li>              <li class="page-footer__links-item">                <span><a href="#index-structure" class="scroll-link  page-footer__link" data-scroll-link>Структура індексу прозорості</a></span>              </li>              <li class="page-footer__links-item">                <span><a href="#getTableModal" class="page-footer__link" data-toggle="modal">Завантажити індикатори</a></span>              </li>            </ul>            <p class="page-footer__mail-wrapper">              <a href="mailto:author@dixigroup.org" class="page-footer__link  page-footer__link--mail">                <svg width="26" height="20" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#envelope"/></svg>                <span>author@dixigroup.org</span>              </a>            </p>          </div>          <div class="page-footer__about-col">            <p class="page-footer__about-text">Робота веб-сайту стала можливою завдяки підтримці американського народу через Агентство США з міжнародного розвитку (USAID). За зміст інформації несе виключну відповідальність DiXi Group, він не обов'язково відображає погляди USAID або Уряду Сполучених Штатів.</p>            <div class="page-footer__about-logo">              <a href="#" class="page-footer__about-link" title="USAID" target="_blank" rel="nofollow">                <img src="img/usaid.png" alt="USAID logo" width="120" height="36" loading="lazy">                <span class="visually-hidden">USAID</span>              </a>              <a href="#" class="page-footer__about-link" title="dixigroup" target="_blank" rel="nofollow">                <img src="img/dixi-group.png" alt="dixigroup logo" width="135" height="30" loading="lazy">                <span class="visually-hidden">dixigroup</span>              </a>            </div>          </div>          <div class="page-footer__copyrights-col">            <div class="copyrights">              <span class="copyrights__owner">©&thinsp;2021. Індекс Прозорості Енергетики</span>              <a href="#" class="copyrights__dev" target="_blank" rel="nofollow">                <img src="img/itdoors-logo.svg" alt="IT-Doors Outsourcing logo" width="85" height="32">              </a>            </div>          </div>        </div>      </footer>    </div>
   </div>
-  <!--DEV
-  @ @include('blocks/get-table-modal/get-table-modal.html')
-  -->
   <div class="modal fade" id="getTableModal" tabindex="-1" aria-labelledby="getTableModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -755,6 +634,691 @@
     </div>
   </div>
   <script src="js/jquery.min.js"></script>
+  <script src="js/nested.tables.min.js"></script>
   <script src="js/script.min.js"></script>
+  <script>
+    var dataInJson = [
+        {
+          data: {
+            Категорія: '1. Баланси',
+            Кількість_індикаторів: 9,
+            Бал: 59,
+            Оцінка: "<span>C-</span>",
+            Характеристика: "середня прозорість"
+          },
+          kids: [
+            {
+              data: {
+                Підкатегорія: '1.1. Балансова річна статистика',
+                Кількість_індикаторів: 33,
+                Бал: 78,
+                Оцінка: "В+",
+                Характеристика: "добра прозорість"
+              },
+              kids: [
+                {
+                  data: {
+                    Сектор: 'Енергетичне вугілля',
+                    Індикатор: 'Обсяги й структура видобутку, використання (споживання), експорту, імпорту, міжнародного бункерування, зміни запасів (за видами)',
+                    Загальна_оцінка: '3'
+                  },
+                  kids: []
+                },
+                {
+                  data: {
+                    Сектор: 'Природний газ',
+                    Індикатор: 'Обсяги й структура видобутку, використання (споживання), експорту, імпорту, міжнародного бункерування, зміни запасів (за видами)',
+                    Загальна_оцінка: '3'
+                  },
+                  kids: []
+                },
+                {
+                  data: {
+                    Сектор: 'Електрична енергія',
+                    Індикатор: 'Обсяги й структура виробництва, споживання, експорту та імпорту, транзиту, втрат під час передачі й розподілу',
+                    Загальна_оцінка: '3'
+                  },
+                  kids: []
+                },
+                {
+                  data: {
+                    Сектор: 'Теплова енергія',
+                    Індикатор: 'Обсяги й структура виробництва, споживання, експорту та імпорту, транзиту, втрат під час передачі й розподілу',
+                    Загальна_оцінка: '3'
+                  },
+                  kids: []
+                },
+                {
+                  data: {
+                    Сектор: 'Нафта й рідке паливо',
+                    Індикатор: 'Обсяги й структура видобутку (виробництва), використання (споживання), експорту та імпорту, зміни запасів, міжнародного бункерування, втрат під час транспортування й переробки',
+                    Загальна_оцінка: '3'
+                  },
+                  kids: []
+                }
+              ]
+            },
+            {
+              data: {
+                Підкатегорія: '1.2. Балансова місячна статистика',
+      Кількість_індикаторів: 33,
+      Бал: 38,
+      Оцінка: "<span>F</span>",
+      Характеристика: "Недостатня прозорість"
+              },
+              kids: [
+                {
+                  data: {
+                    Сектор: 'Енергетичне вугілля',
+                    Індикатор: 'Обсяги й структура видобутку, використання (споживання), експорту, імпорту, міжнародного бункерування, зміни запасів (за видами) (щомісячні)',
+                    Загальна_оцінка: '2'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Сектор: 'Природний газ',
+                    Індикатор: 'Обсяги й структура видобутку, використання (споживання), експорту, імпорту, міжнародного бункерування, зміни запасів (за видами) (щомісячні)',
+                    Загальна_оцінка: '2'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Сектор: 'Електрична енергія',
+                    Індикатор: 'Обсяги й структура видобутку, використання (споживання), експорту, імпорту, міжнародного бункерування, зміни запасів (за видами) (щомісячні)',
+                    Загальна_оцінка: '2'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Сектор: 'Нафта й рідке паливо',
+                    Індикатор: 'Обсяги й структура видобутку, використання (споживання), експорту, імпорту, міжнародного бункерування, зміни запасів (за видами) (щомісячні)',
+                    Загальна_оцінка: 'не визначено'
+                  },
+                  kids: []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          data: {
+    Категорія: '2. Природні монополії',
+      Кількість_індикаторів: 72,
+      Бал: 59,
+      Оцінка: "<span>C-</span>",
+      Характеристика: "середня прозорість"
+          },
+          kids: [
+            {
+              data: {
+                Підкатегорія: '2.1. Діяльність операторів систем передачі та розподілу',
+      Кількість_індикаторів: 47,
+                Бал: 59,
+      Оцінка: "<span>C-</span>",
+      Характеристика: "Середня прозорість"
+              },
+              kids: [
+                {
+                  data: {
+                    Сектор: 'Природний газ',
+                    Кількість_індикаторів: '22',
+                    Бал: 57,
+        Оцінка: "<span>C-</span>",
+        Характеристика: "Середня прозорість"
+                  },
+                  kids: [
+        {
+          data:{
+            Індикатор: 'Правила приєднання споживачів операторами систем розподілу, а також сховищ, установок LNG і промислових об`єктів оператором газотранспортної системи',
+            Загальна_оцінка: '3.50'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Детальна інформація стосовно послуг оператора системи передачі, операторів сховищ, установок LNG та відповідні умови, разом із технічною інформацією, вкл. процедури щодо номінації та метчінгу та механізми у надзвичайних ситуаціях в межах відповідальності оператора системи передачі та інші правила загальної відповідальності оператора',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Мережевий кодекс, різні типи контрактів на транспортування (у т.ч. стандартні контракти) та/або стандартні умови, що визначають права та обов’язки усіх користувачів системи',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Механізми розподілу потужностей (сapacity allocation mechanisms), що застосовуються операторами системи передачі (TSO), операторами сховищ, установок LNG',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Застосовні процедури управління перевантаженнями, що застосовуються операторами системи передачі (TSO), операторами сховищ, установок LNG',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Гармонізовані процедури, що застосовуються при використанні системи передачі',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Правила, що застосовуються до торгівлі обсягами потужності на вторинному ринку по відношенню до оператора системи передачі',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Рівні гнучкості та відхилень, що включаються до транспортних та інших послуг без окремих зборів, а також будь-якої гнучкості, запропонованої на додаток до цього, та відповідні платежі',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Детальний опис системи, що зазначає усі відповідні точки з’єднання із системою інших TSO (з іменами цих TSO) та/або газовою інфраструктурою, такою як установки LNG та інфраструктурою для надання допоміжних послуг',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Дані про використання, доступність послуг доступу до сховищ та установок LNG, інформація про законтрактовану та доступну пропускну потужність',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Кількісна інформація про технічну, законтрактовану та доступну пропускну потужність та нформація про доступність короткострокових послуг («день та тиждень наперед») для усіх відповідних точок, включаючи точки входу і виходу (у т.ч. транскордонні) (щонайменше на щоденній основі)',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Кількісна інформація про технічну, законтрактовану та доступну пропускну потужність для усіх відповідних точок (на річній основі)',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Агрегована інформація про результати річних, квартальних, місячних аукціонів на пропускну потужність, аукціонів "на день вперед" та внутрішньодобових',
+            Загальна_оцінка: '1.75'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Кількісна інформація про доступну пропускну потужність для усіх точок, включаючи точки входу і виходу (у т.ч. транскордонні) (на період наступних 24 місяців)',
+            Загальна_оцінка: '1.50'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Кількість газу у кожному сховищі або установці LNG, а також дані про закачування та відбір, доступну потужність сховищ та установок LNG (на щоденній основі)',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо попиту та пропозиції ex-ante та ex-post, основуючись на номінаціях, прогнозах та здійснених передачах у системі та відібраних із неї',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Правила надання послуг балансування оператором системи передачі',
+            Загальна_оцінка: '1.75'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Вжиті для балансування системи заходи, а також понесені витрати і зібрані надходження',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація в режимі он-лайн стосовно статусу балансування користувачів системи, вкл. дані про фактичні та прогнозні обсяги газу в системі для кожної зони балансування з періодичністю двічі на день',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Заплановані періоди технічного обслуговування, які можуть вплинути на права користувачів системи та відповідна оперативна інформація',
+            Загальна_оцінка: '3.50'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація про якість газу та вимоги щодо тиску (якщо такі вимоги застосовні для доступу до системи)',
+            Загальна_оцінка: '1.75'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Он-лайн інструменти для бронювання, підтвердження потужностей, а також передачі прав на потужність між користувачами мережі та здійснення процедур номінації / реномінації',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        }
+       ]
+                },
+      {
+                  data: {
+                    Сектор: 'Нафта й рідке паливо',
+                    Кількість_індикаторів: '3',
+                    Бал: 0,
+        Оцінка: "<span>F</span>",
+        Характеристика: "Неприйнятна прозорість"
+                  },
+                  kids: [
+        {
+          data:{
+            Індикатор: 'Інформація про величини максимальної, законтрактованої та доступної потужності магістрального трубопроводу для транспортування нафти, нафтопродуктів',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Умови доступу до магістрального трубопроводу для замовників послуг з транспортування нафти, нафтопродуктів',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Механізм розподілу пропускної потужності магістрального трубопроводу для транспортування нафти, нафтопродуктів (нафтотранспортних, нафтопродуктотранспортних потужностей) в разі її недостатності',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        }
+       ]
+                },
+      {
+                  data: {
+                    Сектор: 'Електрична енергія',
+                    Кількість_індикаторів: '23',
+                    Бал: 66,
+        Оцінка: "<span>C+</span>",
+        Характеристика: "Середня прозорість"
+                  },
+                  kids: [
+        {
+          data:{
+            Індикатор: 'Правила приєднання до системи передачі (у т.ч. нових генеруючих потужностей) і систем розподілу',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Мережевий кодекс, різні типи контрактів на передачу (у т.ч. стандартні контракти) та/або стандартні умови, що визначають права та обов’язки усіх користувачів системи',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Правила балансування системи передачі',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація про стандарти якості електропостачання',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Звіт за результатами проведення моніторингу якості електричної енергії в системі (ОСП)',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо величин показників якості електропостачання, розмірів компенсацій та порядку їх надання (ОСР)',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Звіт за результатами проведення моніторингу якості електричної енергії в системі (ОСР)',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Стандарти безпеки, експлуатації та планування, що використовуються операторами систем передачі',
+            Загальна_оцінка: '2.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Дані щодо пропускної потужності, яка буде розподілена',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Дані щодо доступності мережі, доступу до неї та її використання',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Опис методу управління перевантаженнями, а також загальну схему обчислення пропускної потужності міжсистемного сполучення',
+            Загальна_оцінка: '2.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Строки, процедури управління перевантаженнями та розподілу пропускної потужності, а також опис пропонованих продуктів, прав та обовязків TSO і сторони, яка отримує пропускну потужність',
+            Загальна_оцінка: '2.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо сумарного навантаження',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо недоступності одиниць споживання',
+            Загальна_оцінка: '2.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Прогнозний запас потужності на рік наперед',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо інфраструктури передачі',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо недоступності інфраструктури передачі',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо наявності та використання прогнозної та пропонованої пропускної спроможності (міжзонна)',
+            Загальна_оцінка: '2.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація про заходи щодо управління обмеженнями',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Прогнози виробництва',
+            Загальна_оцінка: '0.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо недоступності одиниць генерації та одиниць виробництва',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація про фактичний відпуск',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        },
+        {
+          data:{
+            Індикатор: 'Інформація щодо балансування',
+            Загальна_оцінка: '4.00'
+          },
+          kids: []
+        }
+       ]
+                }
+              ]
+            },
+            {
+              data: {
+      Підкатегорія: '2.2. Незалежність операторів систем передачі та розподілу',
+                Кількість_індикаторів: '23',
+                Бал: 22,
+      Оцінка: "<span>F</span>",
+      Характеристика: "Неприйнятна прозорість"
+              },
+              kids: []
+            }
+          ]
+        },
+        {
+          data: {
+    Категорія: '3. Постачання',
+            Кількість_індикаторів: 33,
+            Бал: 58,
+    Оцінка: "<span class='c-minus'>C-</span>",
+    Характеристика: "середня прозорість"
+          },
+          kids: [
+            {
+              data: {
+                department: 'development'
+              },
+              kids: [
+                {
+                  data: {
+                    name: 'Wat Dakota'
+                  },
+                  kids: []
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          data: {
+    Категорія: '4. Надійність і безпека',
+            Кількість_індикаторів: 15,
+            Бал: 53,
+    Оцінка: "<span>D+</span>",
+    Характеристика: "недостатня прозорість"
+          },
+          kids: []
+        },
+              {
+          data: {
+    Категорія: '5. Споживання',
+            Кількість_індикаторів: 34,
+            Бал: 68,
+    Оцінка: "<span>C+</span>",
+    Характеристика: "середня прозорість"
+          },
+          kids: []
+        },
+              {
+          data: {
+    Категорія: '6. Звітність',
+            Кількість_індикаторів: 12,
+            Бал:35,
+    Оцінка: "<span>F</span>",
+    Характеристика: "неприйнятна прозорість"
+          },
+          kids: []
+        },
+              {
+          data: {
+    Категорія: '7. Політика',
+            Кількість_індикаторів: 20,
+            Бал: 59,
+    Оцінка: "<span>C-</span>",
+    Характеристика: "середня прозорість"
+          },
+          kids: []
+        },
+              {
+          data: {
+    Категорія: '8. Органи влади',
+            Кількість_індикаторів: 15,
+            Бал: 59,
+    Оцінка: "<span>C-</span>",
+    Характеристика: "середня прозорість"
+          },
+          kids: [
+      {
+      data: {
+        Підкатегорія: '8.1. Витрачання бюджетних коштів',
+        Кількість_індикаторів: 8,
+        Бал: 19.50,
+        Оцінка: "<span>C-</span>",
+        Характеристика: "середня прозорість"
+      },
+      kids: [
+                {
+                  data: {
+                    Індикатор: 'Паспорти бюджетних програм',
+        Загальна_оцінка: '11'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Індикатор: 'Звіти про виконання паспорту бюджетної програми',
+        Загальна_оцінка: '11'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Індикатор: 'Звіти про використання бюджетних коштів відповідним розпорядником',
+        Загальна_оцінка: '11'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Індикатор: 'Звіти про результати незалежного фінансового аудиту виконання бюджетних програм',
+        Загальна_оцінка: '11'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Індикатор: 'Реєстр субєктів отримувачів державної допомоги (компанії енергетичного сектору)',
+        Загальна_оцінка: '11'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Індикатор: 'Реєстр рішень про надання державної допомоги (компанії енергетичного сектору)',
+        Загальна_оцінка: '11'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Індикатор: 'Річний звіт про надання державної допомоги',
+        Загальна_оцінка: '11'
+                  },
+                  kids: []
+                },
+      {
+                  data: {
+                    Індикатор: 'Інформація про квазіфіскальні операції та державну допомогу, надану енергетичним компаніям (в розрізі компаній)',
+        Загальна_оцінка: '11'
+                  },
+                  kids: []
+                }
+      ]
+    },
+    {
+      data: {
+        Підкатегорія: '8.2. Прозорість державного управління',
+        Кількість_індикаторів: 7,
+        Бал: 14.22,
+        Оцінка: "<span>C-</span>",
+        Характеристика: "середня прозорість"
+      },
+      kids: []
+    }
+    ]
+        }
+      ];
+      var settings = {
+        iDisplayLength: 50,
+        bLengthChange: false,
+        paging: false,
+        bFilter: false,
+        bSort: false,
+        bInfo: false
+      };
+      var table = new nestedTables.TableHierarchy(
+        'index-structure-table',
+        dataInJson,
+        settings
+      );
+      table.initializeTableHierarchy();
+      var tableEle = document.querySelector('#index-structure-table .table');
+      tableEle.addEventListener('onShowChildHierarchy', function(e) {
+        //console.log(e);
+      });
+      tableEle.addEventListener('onHideChildHierarchy', function(e) {
+        //console.log(e);
+      });
+  </script>
 </body>
 </html>
