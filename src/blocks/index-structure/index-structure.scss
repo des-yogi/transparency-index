@@ -27,5 +27,110 @@
     align-items: center;
     justify-content: center;
     margin-top: 24px;
+    overflow-x: auto;
+
+    & > div {
+      width: 100%;
+    }
+
+    .tableWrapper {
+
+      & > .table {
+        min-width: 750px;
+      }
+    }
+
+    .table {
+      border: none !important;
+
+      .arrowContainer {
+        //display: inline-flex;
+        //align-items: center;
+        min-width: 30px;
+        padding-left: 0;
+        padding-right: 0;
+        vertical-align: middle;
+
+        // &::after {
+        //   display: block;
+        //   content: "";
+        //   width: 23px;
+        //   height: 23px;
+        //   //background-color: red;
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+        //   background-size: 9px 6px;
+        //   background-image: svg-load('../blocks/sprite-svg/svg/arrow-down.svg', fill=$text-color);
+        //   border-radius: 50%;
+        //   border: 2px solid currentColor;
+        // }
+
+        & > img {
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin: auto 0;
+        }
+      }
+
+      th,
+      td {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      thead {
+
+        th {
+          white-space: nowrap;
+          background-color: $bg-light;
+          border: none !important;
+
+          &:first-child {
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+          }
+
+          &:last-child {
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+          }
+
+          &:nth-child(3) {
+            max-width: 210px;
+          }
+
+          &:nth-child(4),
+          &:nth-child(5) {
+            min-width: 60px;
+          }
+        }
+      }
+
+      td {
+        //border-top: none;
+        border-top: 1px solid $bg-light;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+        &.details {
+          border: none;
+        }
+
+        &:nth-child(3) {
+          max-width: 210px;
+        }
+
+        span {
+          display: inline-block;
+          vertical-align: top;
+          min-width: 50px;
+          text-align: center;
+          padding: 2px 8px;
+          border-radius: $border-radius;
+        }
+      }
+    }
   }
 }
