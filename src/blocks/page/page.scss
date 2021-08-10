@@ -357,12 +357,22 @@ a {
   }
 }
 
+.two-col {
+
+  @media (min-width: $screen-xl) {
+    column-count: 2;
+    column-gap: 32px;
+    column-fill: balance;
+  }
+}
+
 .a-plus,
 .a,
 .b-plus,
 .b,
 .d,
-.d-minus {
+.d-minus,
+.f {
 
   & + span {
     color: $white;
@@ -374,8 +384,7 @@ a {
 .c-plus,
 .c,
 .c-minus,
-.d-plus
-.f {
+.d-plus {
 
   & + span {
     color: $text-color;
@@ -392,10 +401,6 @@ a {
   background-color: #7dc374;
 }
 
-.a-minus {
-  background-color: #abd59e;
-}
-
 .b-plus {
   color: $white;
   background-color: #1791d2;
@@ -404,6 +409,25 @@ a {
 .b {
   color: $white;
   background-color: #44b5e5;
+}
+
+.d {
+  color: $white;
+  background-color: #f2793d;
+}
+
+.d-minus {
+  color: $white;
+  background-color: #ed4243;
+}
+
+.f {
+  color: $white;
+  background-color: #403339;
+}
+
+.a-minus {
+  background-color: #abd59e;
 }
 
 .b-minus {
@@ -424,19 +448,4 @@ a {
 
 .d-plus {
   background-color: #fcbc4d;
-}
-
-.d {
-  color: $white;
-  background-color: #f2793d;
-}
-
-.d-minus {
-  color: $white;
-  background-color: #ed4243;
-}
-
-.f {
-  color: $white;
-  background-color: #403339;
 }

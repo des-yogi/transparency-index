@@ -18,7 +18,8 @@
     }
 
     @media (min-width: $screen-xl) {
-      max-width: calc(50% - 16px);
+      //max-width: calc(50% - 16px);
+      max-width: 100%;
     }
   }
 

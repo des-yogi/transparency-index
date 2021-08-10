@@ -33,12 +33,14 @@
     display: block;
     width: 100%;
     height: 100%;
+    border-radius: $border-radius;
+    border: 1px solid transparent;
     overflow: hidden;
 
-    //&:hover,
-    //&:focus {
-      //box-shadow: $shadow;
-    //}
+    // &:hover,
+    // &:focus {
+    //   border-color: #ff0000;
+    // }
 
     img {
       display: block;

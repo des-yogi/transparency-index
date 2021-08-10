@@ -113,11 +113,15 @@ blockquote,
 pre,
 address,
 figure {
-  margin-top: 0;
+  margin-top: 0.75em;
   margin-bottom: 0.75em;
   color: currentColor;
 
-  &:last-of-type {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
     margin-bottom: 0;
   }
 }
@@ -141,6 +145,10 @@ ul ol {
 
 li {
   line-height: inherit;
+}
+
+li + li {
+  margin-top: 0.75em;
 }
 
 hr {
@@ -233,19 +241,19 @@ pre {
 }
 
 // Вложенные упорядоченные списки: 1, 2, 3, 3.1 -> 3.1.1, 3.1.2…
-ol {
-  list-style: none;
-  counter-reset: something;
-  padding-left: 32px;
+// ol {
+//   list-style: none;
+//   counter-reset: something;
+//   padding-left: 32px;
 
-  li {
-    counter-increment: something;
+//   li {
+//     counter-increment: something;
 
-    &::before {
-      content: counters(something, ".") ". ";
-    }
-  }
-}
+//     &::before {
+//       content: counters(something, ".") ". ";
+//     }
+//   }
+// }
 
 a {
   text-decoration-skip-ink: inherit;
