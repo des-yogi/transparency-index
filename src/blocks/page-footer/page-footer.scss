@@ -30,9 +30,17 @@
     @include col(xs, 16);
   }
 
+  &__links {
+    margin-bottom: 20px !important;
+  }
+
   &__links-item {
     @include col(xs, 16);
     @include col(md, 8);
+
+    & + & {
+      margin-top: 0;
+    }
 
     &:nth-last-child(-n+2) {
 
@@ -69,6 +77,7 @@
   }
 
   &__mail-wrapper {
+    margin-top: 0;
     border-bottom: 1.5px solid rgba($white, 0.15);
 
     @media (min-width: $screen-md) {
