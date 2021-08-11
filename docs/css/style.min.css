@@ -152,6 +152,8 @@
     max-width:100%;
     padding-left:16px;
     padding-right:16px; }
+.page-footer__links{
+    margin-bottom:20px !important; }
 .page-footer__links-item{
     -webkit-box-flex:0;
         -ms-flex:0 0 100%;
@@ -159,6 +161,8 @@
     max-width:100%;
     padding-left:16px;
     padding-right:16px; }
+.page-footer__links-item + .page-footer__links-item{
+      margin-top:0; }
 .page-footer__links-item span{
       display:block;
       border-bottom:1.5px solid rgba(255, 255, 255, 0.15); }
@@ -179,6 +183,7 @@
 .page-footer__link--mail span{
         margin-left:16px; }
 .page-footer__mail-wrapper{
+    margin-top:0;
     border-bottom:1.5px solid rgba(255, 255, 255, 0.15); }
 .page-footer__about-logo{
     display:-webkit-box;
@@ -672,6 +677,7 @@ a.btn--disabled{
       -ms-flex-pack:center;
           justify-content:center; }
 .lang-switcher__item + .lang-switcher__item{
+    margin-top:0;
     margin-left:12px; }
 .lang-switcher__item.active .lang-switcher__link{
     color:black;
