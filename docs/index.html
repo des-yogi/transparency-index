@@ -26,7 +26,39 @@
 <body>
 <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
   <div class="page__inner">
-    <div class="page__content">      <header class="container  page-header">        <div class="page-header__logo-col">          <span class="logo">            <img src="img/index-logo.svg" alt="Index logo" width="500" height="32">          </span>        </div>        <div class="page-header__dixi-col">          <span>            <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">          </span>        </div>        <div class="page-header__download-col">          <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">            <span>              <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>            </span>            <span>Отримати таблиці індикаторів</span>          </button>        </div>        <div class="page-header__lang-col">          <ul class="list-nostyled  lang-switcher">            <li class="lang-switcher__item  active">              <a href="#" class="lang-switcher__link">Укр</a>            </li>            <li class="lang-switcher__item">              <a href="#" class="lang-switcher__link">Eng</a>            </li>          </ul>        </div>      </header>      <main role="main">
+    <div class="page__content">
+      <header class="container  page-header">
+        <div class="page-header__logo-col">
+          <span class="logo">
+            <img class="logo__icon-img" src="img/icon-logo.svg" alt="Eye icon" width="29" height="20">
+            <img class="logo__main-img" src="img/index-logo.svg" alt="Index logo" width="500" height="32">
+          </span>
+        </div>
+        <div class="page-header__dixi-col">
+          <span>
+            <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">
+          </span>
+        </div>
+        <div class="page-header__download-col">
+          <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">
+            <span>
+              <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>
+            </span>
+            <span>Отримати таблиці індикаторів</span>
+          </button>
+        </div>
+        <div class="page-header__lang-col">
+          <ul class="list-nostyled  lang-switcher">
+            <li class="lang-switcher__item  active">
+              <a href="#" class="lang-switcher__link">Укр</a>
+            </li>
+            <li class="lang-switcher__item">
+              <a href="#" class="lang-switcher__link">Eng</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main role="main">
         <div class="container">
           <section class="intro">
             <h1 id="goal" class="intro__title">
@@ -59,7 +91,7 @@
                     <p>Усі розраховані індекси переведені у стобальну шкалу як 25Ti із заокругленням і таким трактуванням відповідності:</p>
                   </div>
                   <figure class="score-interpretation__figure">
-                    <img src="img/score-diagram.svg" alt="Описание" width="505" height="697" loading="lazy">
+                    <img src="img/score-diagram.svg" alt="Описание" width="505" height="504" loading="lazy" decoding="async">
                   </figure>
                 </section>
               </div>
@@ -470,6 +502,12 @@
               </div>
             </div>
             <div id="index-structure-table" class="index-structure__diagram-wrapper"></div>
+            <div class="btn__wrapper">
+              <button class="btn  btn--icon">
+                <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#collapse"/></svg>
+                <span>Згорнути таблицю</span>
+              </button>
+            </div>
           </section>
           <section class="years-transparency-index">
             <div class="years-transparency-index__header">
@@ -508,8 +546,9 @@
                 <div class="years-transparency-index__img" role="presentation">
                   <picture>
                     <!-- <source srcset="img/transparency-index-2018.webp" type="image/webp"> -->
-                    <img src="img/transparency-index-2021.svg" alt="Описание" width="447" height="518" loading="lazy" decoding="async">
+                    <img src="img/transparency-index-soon.svg" alt="Описание" width="447" height="518" loading="lazy" decoding="async">
                   </picture>
+                  <div class="years-transparency-index__img-caption">2021 <span>Незабаром</span></div>
                 </div>
               </div>
             </div>
