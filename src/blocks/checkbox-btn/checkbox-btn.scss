@@ -1,0 +1,52 @@
+.checkbox-btn {
+
+  $block-name:                &; // #{$block-name}__element
+
+  flex: 0 0;
+
+  & + & {
+    margin-left: 16px;
+
+    @media (min-width: $screen-md) {
+      margin-left: 24px;
+    }
+  }
+
+  &__wrapper {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  &__label {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5.5px 12px 3.5px;
+    font-size: inherit;
+    line-height: inherit;
+    white-space: nowrap;
+    background-color: $white;
+    border-radius: $border-radius;
+    border: 1.5px solid $black;
+    user-select: none;
+
+    @media (min-width: $screen-md) {
+      padding: 7px 12px 5px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba($black, 0.05);
+    }
+  }
+
+  &__input:focus + #{$block-name}__label {
+    background-color: rgba($black, 0.05);
+    box-shadow: 0 0 14px rgba($black, 0.25);
+  }
+
+  &__input:checked + #{$block-name}__label {
+    color: $white;
+    background-color: $black;
+  }
+}
