@@ -35,6 +35,10 @@
     // @include field-focus;
   }
 
+  &__wrapper {
+    margin-top: 24px;
+  }
+
   &--disabled,
   &:disabled {
     // opacity: $opacity;
@@ -63,6 +67,18 @@
       background-color: $white;
       box-shadow: $shadow;
       // border-color: darken($gray-lighter, 12%);
+    }
+  }
+
+  &--icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+
+    svg {
+      margin-right: 16px;
     }
   }
 

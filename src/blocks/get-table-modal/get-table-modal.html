@@ -1,0 +1,94 @@
+<!--DEV
+@ @include('blocks/get-table-modal/get-table-modal.html')
+-->
+<div class="modal fade" id="getTableModal" tabindex="-1" aria-labelledby="getTableModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="getTableModalLabel">Отримати таблиці індикаторів</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+          <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"></use></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="getTable" action="" method="post">
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="name" class="text-input__field" type="text" name="name" value="" onblur="this.setAttribute('value', this.value);">
+              <label class="text-input__label" for="name">
+                <span class="text-input__label-content">Ім'я</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="surname" class="text-input__field" type="text" name="surname" value="" onblur="this.setAttribute('value', this.value);">
+              <label class="text-input__label" for="surname">
+                <span class="text-input__label-content">Прізвище</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="state" class="text-input__field" type="text" name="state" value="" onblur="this.setAttribute('value', this.value);">
+              <label class="text-input__label" for="state">
+                <span class="text-input__label-content">Країна</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="organization" class="text-input__field" type="text" name="organization" value="" onblur="this.setAttribute('value', this.value);">
+              <label class="text-input__label" for="organization">
+                <span class="text-input__label-content">Організація</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="email" class="text-input__field" type="email" name="email" value="" onblur="this.setAttribute('value', this.value);">
+              <label class="text-input__label" for="email">
+                <span class="text-input__label-content">Email</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="field-checkbox__wrapper" style="margin-top:32px;">
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox">
+                <span class="field-checkbox__name-text">Таблиця за 2018 рік</span>
+              </label>
+            </div>
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox">
+                <span class="field-checkbox__name-text">Таблиця за 2019 рік</span>
+              </label>
+            </div>
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox">
+                <span class="field-checkbox__name-text">Таблиця за 2020 рік</span>
+              </label>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button form="getTable" type="submit" class="btn">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
