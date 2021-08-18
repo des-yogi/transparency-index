@@ -204,10 +204,13 @@
   display:inline-flex;
   -webkit-box-align:center;
       -ms-flex-align:center;
-          align-items:center;
-  white-space:nowrap; }
-.logo img{
+          align-items:center; }
+.logo__main-img{
     max-width:300px; }
+.logo__icon-img{
+    width:29px;
+    height:20px;
+    margin-right:16px; }
 @-ms-viewport{
   width:device-width; }
 .page{
@@ -634,6 +637,8 @@ a{
     text-decoration:none;
     color:black;
     background-color:rgba(0, 0, 0, 0.05); }
+.btn__wrapper{
+    margin-top:24px; }
 .btn--disabled, .btn:disabled{
     cursor:not-allowed;
     color:black;
@@ -649,6 +654,20 @@ a.btn--disabled{
       background-color:white;
       -webkit-box-shadow:0 0 14px rgba(0, 0, 0, 0.25);
               box-shadow:0 0 14px rgba(0, 0, 0, 0.25); }
+.btn--icon{
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    width:100%;
+    max-width:320px; }
+.btn--icon svg{
+      margin-right:16px; }
 .form__fieldset{
   min-width:0;
   padding:0;
@@ -1107,13 +1126,27 @@ a.btn--disabled{
     padding-right:16px;
     margin-bottom:32px; }
 .years-transparency-index__img{
-    display:block; }
+    display:block;
+    position:relative; }
 .years-transparency-index__img:hover + p span, .years-transparency-index__img:focus + p span{
       text-decoration:underline; }
 .years-transparency-index__img img{
       display:block;
       width:100%;
       height:100%; }
+.years-transparency-index__img-caption{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:60px;
+    padding:0 16px;
+    font-size:18px;
+    font-weight:500;
+    text-align:center; }
+.years-transparency-index__img-caption span{
+      display:block;
+      font-size:14px;
+      font-weight:400; }
 .years-transparency-index__descr{
     position:relative;
     padding-left:36px;
@@ -1484,6 +1517,8 @@ input:checked ~ .field-radio__name-text:after{
         max-width:50%;
         padding-left:16px;
         padding-right:16px; }
+      .years-transparency-index__img-caption{
+        bottom:30px; }
       .partner-projects__col{
         -webkit-box-flex:0;
             -ms-flex:0 0 50%;
@@ -1544,7 +1579,7 @@ input:checked ~ .field-radio__name-text:after{
         border-bottom:none; }
       .page-footer__mail-wrapper{
         border-top:1.5px solid rgba(255, 255, 255, 0.15); }
-      .logo img{
+      .logo__main-img{
         max-width:375px; }
     .container{
       padding-left:50px;
@@ -1599,6 +1634,8 @@ input:checked ~ .field-radio__name-text:after{
       padding-bottom:64px; }
     .years-transparency-index__header, .years-transparency-index__downloads-inner{
       max-width:calc(75% - 16px); }
+      .years-transparency-index__img-caption{
+        bottom:90px; }
       .years-transparency-index__downloads{
         padding-top:32px;
         margin-top:64px; }
@@ -1655,6 +1692,8 @@ input:checked ~ .field-radio__name-text:after{
         padding-right:16px; }
       .years-transparency-index__col{
         margin-bottom:0; }
+      .years-transparency-index__img-caption{
+        bottom:30px; }
       .partner-projects__col{
         -webkit-box-flex:0;
             -ms-flex:0 0 25%;
@@ -1745,6 +1784,8 @@ input:checked ~ .field-radio__name-text:after{
         margin-top:44px; }
     .years-transparency-index__header, .years-transparency-index__downloads-inner{
       max-width:calc(50% - 16px); }
+      .years-transparency-index__img-caption{
+        bottom:50px; }
       .partner-projects__header{
         max-width:calc(50% - 16px); }
     .copyrights{
@@ -1774,7 +1815,7 @@ input:checked ~ .field-radio__name-text:after{
         .page-header__download-btn--mod{
           padding-left:24px;
           padding-right:24px; }
-      .logo img{
+      .logo__main-img{
         max-width:500px; }
     .container{
       padding-left:calc(50% - 700px);
@@ -1788,6 +1829,8 @@ input:checked ~ .field-radio__name-text:after{
       padding-right:16px; }
   .years-index__header, .years-index__footer{
     max-width:calc(100% - 210px); }
+      .years-transparency-index__img-caption{
+        bottom:90px; }
     .score-interpretation__col{
       -webkit-box-flex:0;
           -ms-flex:0 0 37.5%;
@@ -1795,6 +1838,9 @@ input:checked ~ .field-radio__name-text:after{
       max-width:37.5%;
       padding-left:16px;
       padding-right:16px; } }
+@media (max-width: 1599px){
+      .logo__icon-img{
+        display:none; } }
 @media (prefers-reduced-motion: reduce){
     .fade{
       -webkit-transition:none;
