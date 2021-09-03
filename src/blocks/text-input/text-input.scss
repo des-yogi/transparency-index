@@ -11,6 +11,8 @@
   }
 
   &__field {
+    position: relative;
+    z-index: 1;
     display: block;
     width: 100%;
     padding: $field-padding-vertical  $field-padding-horizontal;
