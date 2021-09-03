@@ -436,7 +436,7 @@ a[href^="tel:"]{ }
 .c{
   background-color:#fef25e; }
 .c-minus{
-  background-color:#fef25e; }
+  background-color:#fff8b2; }
 .d-plus{
   background-color:#fcbc4d; }
 @font-face{
@@ -1368,6 +1368,8 @@ input:checked ~ .field-radio__name-text:after{
 .text-input__wrapper{
     position:relative; }
 .text-input__field{
+    position:relative;
+    z-index:1;
     display:block;
     width:100%;
     padding:8px 12px;
