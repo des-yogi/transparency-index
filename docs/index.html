@@ -27,39 +27,72 @@
 <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
   <div class="page__inner">
     <div class="page__content">
-      <header class="container  page-header">
-        <div class="page-header__logo-col">
-          <span class="logo">
-            <img class="logo__icon-img" src="img/icon-logo.svg" alt="Eye icon" width="29" height="20">
-            <img class="logo__main-img" src="img/index-logo.svg" alt="Index logo" width="500" height="32">
-          </span>
-        </div>
-        <div class="page-header__dixi-col">
-          <span>
-            <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">
-          </span>
-        </div>
-        <div class="page-header__download-col">
-          <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">
-            <span>
-              <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>
+      <div class="page-header__wrapper">
+        <header id="header" class="container  page-header">
+          <div class="page-header__logo-col">
+            <span class="logo">
+              <img class="logo__icon-img" src="img/icon-logo.svg" alt="Eye icon" width="29" height="20">
+              <img class="logo__main-img" src="img/index-logo.svg" alt="Index logo" width="500" height="32">
             </span>
-            <span>Отримати таблиці індикаторів</span>
-          </button>
-        </div>
-        <div class="page-header__lang-col">
-          <ul class="list-nostyled  lang-switcher">
-            <li class="lang-switcher__item  active">
-              <a href="#" class="lang-switcher__link">Укр</a>
-            </li>
-            <li class="lang-switcher__item">
-              <a href="#" class="lang-switcher__link">Eng</a>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <main role="main">
-        <div class="container">
+          </div>
+          <!-- <div class="page-header__dixi-col">
+            <span>
+              <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">
+            </span>
+          </div> -->
+          <div class="page-header__download-col">
+            <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">
+              <span>
+                <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>
+              </span>
+              <span>Отримати таблиці індикаторів</span>
+            </button>
+          </div>
+          <div class="page-header__lang-col">
+            <ul class="list-nostyled  lang-switcher">
+              <li class="lang-switcher__item  active">
+                <a href="#" class="lang-switcher__link">Укр</a>
+              </li>
+              <li class="lang-switcher__item">
+                <a href="#" class="lang-switcher__link">Eng</a>
+              </li>
+            </ul>
+            <button class="burger" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <div id="collapseNav" class="anchor-nav  collapse">
+            <ul class="list-nostyled  anchor-nav__list">
+              <li>
+                <a href="#goal" class="scroll-link" data-scroll-link>Яка мета Індексу?</a>
+              </li>
+              <li>
+                <a href="#years-index" class="scroll-link" data-scroll-link>Індекс по рокам</a>
+              </li>
+              <li>
+                <a href="#category-index" class="scroll-link" data-scroll-link>Оцінки прозорості за категоріями</a>
+              </li>
+              <li>
+                <a href="#category-analysis" class="scroll-link" data-scroll-link>Аналіз за категоріями</a>
+              </li>
+              <li>
+                <a href="#transparency-score" class="scroll-link" data-scroll-link>Оцінки прозорості за секторами</a>
+              </li>
+              <li>
+                <a href="#different-authorities" class="scroll-link" data-scroll-link>Органи влади</a>
+              </li>
+              <li>
+                <a href="#index-structure" class="scroll-link" data-scroll-link>Структура індексу прозорості</a>
+              </li>
+              <li>
+                <a href="#getTableModal" data-toggle="modal" data-target="#getTableModal">Завантажити індикатори</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </div>
+      <main>
+        <div class="container  main-content">
           <section class="intro">
             <h1 id="goal" class="intro__title">
               <span class="visually-hidden">Індекс Прозорості Енергетики</span>
@@ -115,24 +148,7 @@
                 </ul>
                 <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eligendi ipsa molestiae quos accusamus. Facere aperiam, earum recusandae nihil? Qui, quas, illo. Aspernatur voluptas sequi natus ipsum fuga laborum perspiciatis mollitia id dignissimos expedita?</p>
               </div>
-              <div class="category-index__btn-wrapper  checkbox-btn__wrapper">
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="year-2018" type="checkbox" name="year" value>
-                  <label class="checkbox-btn__label  btn" for="year-2018">2018</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="year-2019" type="checkbox" name="year" value>
-                  <label class="checkbox-btn__label  btn" for="year-2019">2019</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="year-2020" type="checkbox" name="year" value checked>
-                  <label class="checkbox-btn__label  btn" for="year-2020">2020</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="year-2021" type="checkbox" name="year" value>
-                  <label class="checkbox-btn__label  btn" for="year-2021">2021</label>
-                </div>
-              </div>
+              <div class="category-index__btn-wrapper  checkbox-btn__wrapper">                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="year-2018" type="checkbox" name="year" value>                  <label class="checkbox-btn__label  btn" for="year-2018">2018</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="year-2019" type="checkbox" name="year" value>                  <label class="checkbox-btn__label  btn" for="year-2019">2019</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="year-2020" type="checkbox" name="year" value checked>                  <label class="checkbox-btn__label  btn" for="year-2020">2020</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="year-2021" type="checkbox" name="year" value>                  <label class="checkbox-btn__label  btn" for="year-2021">2021</label>                </div>              </div>
             </div>
             <div class="category-index__diagram-wrapper">
               <strong>[Диаграмма]</strong>
@@ -156,24 +172,7 @@
                 </ol>
                 <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eligendi ipsa molestiae quos accusamus. Facere aperiam, earum recusandae nihil? Qui, quas, illo. Aspernatur voluptas sequi natus ipsum fuga laborum perspiciatis mollitia id dignissimos expedita?</p>
               </div>
-              <div class="category-analysis__btn-wrapper  checkbox-btn__wrapper">
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="analysis-2018" type="radio" name="analysis" value>
-                  <label class="checkbox-btn__label  btn" for="analysis-2018">2018</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="analysis-2019" type="radio" name="analysis" value checked>
-                  <label class="checkbox-btn__label  btn" for="analysis-2019">2019</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="analysis-2020" type="radio" name="analysis" value>
-                  <label class="checkbox-btn__label  btn" for="analysis-2020">2020</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="analysis-2021" type="radio" name="analysis" value>
-                  <label class="checkbox-btn__label  btn" for="analysis-2021">2021</label>
-                </div>
-              </div>
+              <div class="category-analysis__btn-wrapper  checkbox-btn__wrapper">                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="analysis-2018" type="radio" name="analysis" value>                  <label class="checkbox-btn__label  btn" for="analysis-2018">2018</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="analysis-2019" type="radio" name="analysis" value checked>                  <label class="checkbox-btn__label  btn" for="analysis-2019">2019</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="analysis-2020" type="radio" name="analysis" value>                  <label class="checkbox-btn__label  btn" for="analysis-2020">2020</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="analysis-2021" type="radio" name="analysis" value>                  <label class="checkbox-btn__label  btn" for="analysis-2021">2021</label>                </div>              </div>
             </div>
             <div class="category-analysis__diagram-wrapper">
               <strong>[Диаграмма]</strong>
@@ -186,24 +185,7 @@
                 <p>Далеко-далеко за, словесными горами, в стране гласных и согласных живут рыбные тексты. До родного взгляд первую страна они грустный ручеек последний курсивных, силуэт, которой вопрос рыбного толку ведущими решила которое великий своего? Даже, взгляд рыбными! От всех, назад, маленький. Знаках, до, lorem? Злых снова ему переписали безопасную несколько страну, деревни свой имени власти, переулка над но, вопроса сих знаках, меня.</p>
                 <p>Далеко-далеко за, словесными горами, в стране гласных и согласных живут рыбные тексты. До родного взгляд первую страна они грустный ручеек последний курсивных, силуэт, которой вопрос рыбного толку ведущими решила которое великий своего? Даже, взгляд рыбными! От всех, назад, маленький. Знаках, до, lorem? Злых снова ему переписали безопасную несколько страну, деревни свой имени власти, переулка над но, вопроса сих знаках, меня.</p>
               </div>
-              <div class="transparency-score__btn-wrapper  checkbox-btn__wrapper">
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="score-2018" type="radio" name="score" value>
-                  <label class="checkbox-btn__label  btn" for="score-2018">2018</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="score-2019" type="radio" name="score" value checked>
-                  <label class="checkbox-btn__label  btn" for="score-2019">2019</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="score-2020" type="radio" name="score" value>
-                  <label class="checkbox-btn__label  btn" for="score-2020">2020</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="score-2021" type="radio" name="score" value>
-                  <label class="checkbox-btn__label  btn" for="score-2021">2021</label>
-                </div>
-              </div>
+              <div class="transparency-score__btn-wrapper  checkbox-btn__wrapper">                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="score-2018" type="radio" name="score" value>                  <label class="checkbox-btn__label  btn" for="score-2018">2018</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="score-2019" type="radio" name="score" value checked>                  <label class="checkbox-btn__label  btn" for="score-2019">2019</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="score-2020" type="radio" name="score" value>                  <label class="checkbox-btn__label  btn" for="score-2020">2020</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="score-2021" type="radio" name="score" value>                  <label class="checkbox-btn__label  btn" for="score-2021">2021</label>                </div>              </div>
             </div>
             <div class="transparency-score__table-wrapper">
               <table class="table transparency-score__table">
@@ -452,24 +434,7 @@
                 <p>Далеко-далеко за, словесными горами, в стране гласных и согласных живут рыбные тексты. До родного взгляд первую страна они грустный ручеек последний курсивных, силуэт, которой вопрос рыбного толку ведущими решила которое великий своего? Даже, взгляд рыбными! От всех, назад, маленький. Знаках, до, lorem? Злых снова ему переписали безопасную несколько страну, деревни свой имени власти, переулка над но, вопроса сих знаках, меня.</p>
                 <p>Далеко-далеко за, словесными горами, в стране гласных и согласных живут рыбные тексты. До родного взгляд первую страна они грустный ручеек последний курсивных, силуэт, которой вопрос рыбного толку ведущими решила которое великий своего? Даже, взгляд рыбными! От всех, назад, маленький. Знаках, до, lorem? Злых снова ему переписали безопасную несколько страну, деревни свой имени власти, переулка над но, вопроса сих знаках, меня.</p>
               </div>
-              <div class="different-authorities__btn-wrapper  checkbox-btn__wrapper">
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="authorities-2018" type="radio" name="authorities" value>
-                  <label class="checkbox-btn__label  btn" for="authorities-2018">2018</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="authorities-2019" type="radio" name="authorities" value checked>
-                  <label class="checkbox-btn__label  btn" for="authorities-2019">2019</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="authorities-2020" type="radio" name="authorities" value>
-                  <label class="checkbox-btn__label  btn" for="authorities-2020">2020</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="authorities-2021" type="radio" name="authorities" value>
-                  <label class="checkbox-btn__label  btn" for="authorities-2021">2021</label>
-                </div>
-              </div>
+              <div class="different-authorities__btn-wrapper  checkbox-btn__wrapper">                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="authorities-2018" type="radio" name="authorities" value>                  <label class="checkbox-btn__label  btn" for="authorities-2018">2018</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="authorities-2019" type="radio" name="authorities" value checked>                  <label class="checkbox-btn__label  btn" for="authorities-2019">2019</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="authorities-2020" type="radio" name="authorities" value>                  <label class="checkbox-btn__label  btn" for="authorities-2020">2020</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="authorities-2021" type="radio" name="authorities" value>                  <label class="checkbox-btn__label  btn" for="authorities-2021">2021</label>                </div>              </div>
             </div>
             <div class="different-authorities__diagram-wrapper">
               <strong>[Диаграмма]</strong>
@@ -482,24 +447,7 @@
                 <p>Далеко-далеко за, словесными горами, в стране гласных и согласных живут рыбные тексты. До родного взгляд первую страна они грустный ручеек последний курсивных, силуэт, которой вопрос рыбного толку ведущими решила которое великий своего? Даже, взгляд рыбными! От всех, назад, маленький. Знаках, до, lorem? Злых снова ему переписали безопасную несколько страну, деревни свой имени власти, переулка над но, вопроса сих знаках, меня.</p>
                 <p>Далеко-далеко за, словесными горами, в стране гласных и согласных живут рыбные тексты. До родного взгляд первую страна они грустный ручеек последний курсивных, силуэт, которой вопрос рыбного толку ведущими решила которое великий своего? Даже, взгляд рыбными! От всех, назад, маленький. Знаках, до, lorem? Злых снова ему переписали безопасную несколько страну, деревни свой имени власти, переулка над но, вопроса сих знаках, меня.</p>
               </div>
-              <div class="index-structure__btn-wrapper  checkbox-btn__wrapper">
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="index-2018" type="radio" name="index" value>
-                  <label class="checkbox-btn__label  btn" for="index-2018">2018</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="index-2019" type="radio" name="index" value checked>
-                  <label class="checkbox-btn__label  btn" for="index-2019">2019</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="index-2020" type="radio" name="index" value>
-                  <label class="checkbox-btn__label  btn" for="index-2020">2020</label>
-                </div>
-                <div class="checkbox-btn">
-                  <input class="checkbox-btn__input  visually-hidden" id="index-2021" type="radio" name="index" value>
-                  <label class="checkbox-btn__label  btn" for="index-2021">2021</label>
-                </div>
-              </div>
+              <div class="index-structure__btn-wrapper  checkbox-btn__wrapper">                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="index-2018" type="radio" name="index" value>                  <label class="checkbox-btn__label  btn" for="index-2018">2018</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="index-2019" type="radio" name="index" value checked>                  <label class="checkbox-btn__label  btn" for="index-2019">2019</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="index-2020" type="radio" name="index" value>                  <label class="checkbox-btn__label  btn" for="index-2020">2020</label>                </div>                <!--DEV                @ @include('blocks/checkbox-btn/checkbox-btn.html', {                  "type": "checkbox",                  "prefix": "",                  "label": "",                  "checked": ""                })                -->                <div class="checkbox-btn">                  <input class="checkbox-btn__input  visually-hidden" id="index-2021" type="radio" name="index" value>                  <label class="checkbox-btn__label  btn" for="index-2021">2021</label>                </div>              </div>
             </div>
             <div id="index-structure-table" class="index-structure__diagram-wrapper"></div>
             <div class="btn__wrapper">
@@ -624,92 +572,7 @@
       </main>
     </div>
     <div class="page__footer-wrapper">      <footer class="container  page-footer" role="contentinfo">        <div class="row">          <div class="page-footer__links-col">            <ul class="list-nostyled  row  page-footer__links">              <li class="page-footer__links-item">                <span>                  <a href="#goal" class="scroll-link  page-footer__link" data-scroll-link>Яка мета Індексу?</a>                </span>              </li>              <li class="page-footer__links-item">                <span><a href="#years-index" class="scroll-link  page-footer__link" data-scroll-link>Індекс по рокам</a></span>              </li>              <li class="page-footer__links-item">                <span>                  <a href="#category-index" class="scroll-link  page-footer__link" data-scroll-link>Оцінка прозорості за категоріями</a>                </span>              </li>              <li class="page-footer__links-item">                <span><a href="#category-analysis" class="scroll-link  page-footer__link" data-scroll-link>Аналіз за категоріями</a></span>              </li>              <li class="page-footer__links-item">                <span>                  <a href="#transparency-score" class="scroll-link  page-footer__link" data-scroll-link>Оцінка прозорості за секторами</a>                </span>              </li>              <li class="page-footer__links-item">                <span><a href="#different-authorities" class="scroll-link  page-footer__link" data-scroll-link>Органи влади</a></span>              </li>              <li class="page-footer__links-item">                <span><a href="#index-structure" class="scroll-link  page-footer__link" data-scroll-link>Структура індексу прозорості</a></span>              </li>              <li class="page-footer__links-item">                <span><a href="#getTableModal" class="page-footer__link" data-toggle="modal">Завантажити індикатори</a></span>              </li>            </ul>            <p class="page-footer__mail-wrapper">              <a href="mailto:author@dixigroup.org" class="page-footer__link  page-footer__link--mail">                <svg width="26" height="20" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#envelope"/></svg>                <span>author@dixigroup.org</span>              </a>            </p>          </div>          <div class="page-footer__about-col">            <p class="page-footer__about-text">Робота веб-сайту стала можливою завдяки підтримці американського народу через Агентство США з міжнародного розвитку (USAID). За зміст інформації несе виключну відповідальність DiXi Group, він не обов'язково відображає погляди USAID або Уряду Сполучених Штатів.</p>            <div class="page-footer__about-logo">              <a href="#" class="page-footer__about-link" title="USAID" target="_blank" rel="nofollow">                <img src="img/usaid.png" alt="USAID logo" width="120" height="36" loading="lazy">                <span class="visually-hidden">USAID</span>              </a>              <a href="#" class="page-footer__about-link" title="dixigroup" target="_blank" rel="nofollow">                <img src="img/dixi-group.png" alt="dixigroup logo" width="135" height="30" loading="lazy">                <span class="visually-hidden">dixigroup</span>              </a>            </div>          </div>          <div class="page-footer__copyrights-col">            <div class="copyrights">              <span class="copyrights__owner">©&thinsp;2021. Індекс Прозорості Енергетики</span>              <a href="#" class="copyrights__dev" target="_blank" rel="nofollow">                <img src="img/itdoors-logo.svg" alt="IT-Doors Outsourcing logo" width="85" height="32">              </a>            </div>          </div>        </div>      </footer>    </div>
-  </div>
-  <div class="modal fade" id="getTableModal" tabindex="-1" aria-labelledby="getTableModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="getTableModalLabel">Отримати таблиці індикаторів</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
-            <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"/></svg>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form id="getTable" action method="post">
-            <div class="text-input">
-              <div class="text-input__wrapper">
-                <input id="name" class="text-input__field" type="text" name="name" value onblur="this.setAttribute('value', this.value);">
-                <label class="text-input__label" for="name">
-                  <span class="text-input__label-content">Ім'я</span>
-                </label>
-              </div>
-              <span class="text-input__error"></span>
-            </div>
-            <div class="text-input">
-              <div class="text-input__wrapper">
-                <input id="surname" class="text-input__field" type="text" name="surname" value onblur="this.setAttribute('value', this.value);">
-                <label class="text-input__label" for="surname">
-                  <span class="text-input__label-content">Прізвище</span>
-                </label>
-              </div>
-              <span class="text-input__error"></span>
-            </div>
-            <div class="text-input">
-              <div class="text-input__wrapper">
-                <input id="state" class="text-input__field" type="text" name="state" value onblur="this.setAttribute('value', this.value);">
-                <label class="text-input__label" for="state">
-                  <span class="text-input__label-content">Країна</span>
-                </label>
-              </div>
-              <span class="text-input__error"></span>
-            </div>
-            <div class="text-input">
-              <div class="text-input__wrapper">
-                <input id="organization" class="text-input__field" type="text" name="organization" value onblur="this.setAttribute('value', this.value);">
-                <label class="text-input__label" for="organization">
-                  <span class="text-input__label-content">Організація</span>
-                </label>
-              </div>
-              <span class="text-input__error"></span>
-            </div>
-            <div class="text-input">
-              <div class="text-input__wrapper">
-                <input id="email" class="text-input__field" type="email" name="email" value onblur="this.setAttribute('value', this.value);">
-                <label class="text-input__label" for="email">
-                  <span class="text-input__label-content">Email</span>
-                </label>
-              </div>
-              <span class="text-input__error"></span>
-            </div>
-            <div class="field-checkbox__wrapper" style="margin-top:32px;">
-              <div class="field-checkbox">
-                <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox">
-                  <span class="field-checkbox__name-text">Таблиця за 2018 рік</span>
-                </label>
-              </div>
-              <div class="field-checkbox">
-                <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox">
-                  <span class="field-checkbox__name-text">Таблиця за 2019 рік</span>
-                </label>
-              </div>
-              <div class="field-checkbox">
-                <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox">
-                  <span class="field-checkbox__name-text">Таблиця за 2020 рік</span>
-                </label>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button form="getTable" type="submit" class="btn">Отправить</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="js/jquery.min.js"></script>  <script src="js/nested.tables.min.js"></script>  <script src="js/script.min.js"></script>  <script>
+  </div>  <div class="modal fade" id="getTableModal" tabindex="-1" aria-labelledby="getTableModalLabel" aria-hidden="true">    <div class="modal-dialog modal-dialog-centered">      <div class="modal-content">        <div class="modal-header">          <h5 class="modal-title" id="getTableModalLabel">Отримати таблиці індикаторів</h5>          <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">            <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"/></svg>          </button>        </div>        <div class="modal-body">          <form id="getTable" action method="post">            <div class="text-input">              <div class="text-input__wrapper">                <input id="name" class="text-input__field" type="text" name="name" value onblur="this.setAttribute('value', this.value);">                <label class="text-input__label" for="name">                  <span class="text-input__label-content">Ім'я</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input id="surname" class="text-input__field" type="text" name="surname" value onblur="this.setAttribute('value', this.value);">                <label class="text-input__label" for="surname">                  <span class="text-input__label-content">Прізвище</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input id="state" class="text-input__field" type="text" name="state" value onblur="this.setAttribute('value', this.value);">                <label class="text-input__label" for="state">                  <span class="text-input__label-content">Країна</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input id="organization" class="text-input__field" type="text" name="organization" value onblur="this.setAttribute('value', this.value);">                <label class="text-input__label" for="organization">                  <span class="text-input__label-content">Організація</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input id="email" class="text-input__field" type="email" name="email" value onblur="this.setAttribute('value', this.value);">                <label class="text-input__label" for="email">                  <span class="text-input__label-content">Email</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="field-checkbox__wrapper" style="margin-top:32px;">              <div class="field-checkbox">                <label class="field-checkbox__name">                  <input class="field-checkbox__input" type="checkbox">                  <span class="field-checkbox__name-text">Таблиця за 2018 рік</span>                </label>              </div>              <div class="field-checkbox">                <label class="field-checkbox__name">                  <input class="field-checkbox__input" type="checkbox">                  <span class="field-checkbox__name-text">Таблиця за 2019 рік</span>                </label>              </div>              <div class="field-checkbox">                <label class="field-checkbox__name">                  <input class="field-checkbox__input" type="checkbox">                  <span class="field-checkbox__name-text">Таблиця за 2020 рік</span>                </label>              </div>            </div>          </form>        </div>        <div class="modal-footer">          <button form="getTable" type="submit" class="btn">Отправить</button>        </div>      </div>    </div>  </div>  <script src="js/jquery.min.js"></script>  <script src="js/nested.tables.min.js"></script>  <script src="js/script.min.js"></script>  <script>
     var dataInJson = [
         {
           data: {
