@@ -2,7 +2,7 @@
 @ @include('blocks/page-header/page-header.html')
 -->
 
-<header class="container  page-header">
+<header id="header" class="container  page-header">
 
   <div class="page-header__logo-col">
     <span class="logo">
@@ -11,11 +11,11 @@
     </span>
   </div>
 
-  <div class="page-header__dixi-col">
+  <!-- <div class="page-header__dixi-col">
     <span>
       <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">
     </span>
-  </div>
+  </div> -->
 
   <div class="page-header__download-col">
     <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">
@@ -35,6 +35,10 @@
         <a href="#" class="lang-switcher__link">Eng</a>
       </li>
     </ul>
+    <button class="burger" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
   </div>
 
+  @@include('../../blocks/anchor-nav/anchor-nav.html')
 </header>

@@ -1,4 +1,8 @@
 .page-header {
+  position: fixed;
+  z-index: 1;
+  will-change: transform;
+
   display: flex !important;
   flex-wrap: wrap;
   align-items: center;
@@ -14,6 +18,19 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__wrapper {
+    position: relative;
+    margin-bottom: 116px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 138px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 87px;
+    }
+  }
+
   &__logo-col {
     display: inline-flex;
     align-items: center;
@@ -23,12 +40,14 @@
     margin-bottom: 16px;
 
     @media (min-width: $screen-md) {
+      flex-basis: auto;
       justify-content: flex-start;
-      flex-basis: 70%;
+      //flex-basis: 70%;
+      margin-bottom: 0;
     }
 
     @media (min-width: $screen-xl) {
-      flex-basis: auto;
+      //flex-basis: auto;
       margin-bottom: 0;
     }
   }
@@ -59,40 +78,44 @@
   }
 
   &__download-col {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 1;
-    flex-basis: 100%;
-    margin-bottom: 16px;
+
+    @media (max-width: $screen-md - 1) {
+      display: none;
+    }
 
     @media (min-width: $screen-md) {
+      display: inline-flex;
+      align-items: center;
+      //justify-content: center;
       justify-content: flex-start;
-      flex-basis: 70%;
-      margin-bottom: 0;
+      flex: 0 1;
+      flex-basis: 100%;
+      order: 1;
+      //flex-basis: 70%;
+      margin-top: 16px;
+
     }
 
     @media (min-width: $screen-xl) {
       flex-basis: auto;
-      margin-bottom: 0;
+      order: initial;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: 48px;
     }
   }
 
   &__lang-col {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex: 0 1;
     flex-basis: 100%;
 
     @media (min-width: $screen-md) {
       justify-content: flex-end;
-      flex-basis: 25%;
-      text-align: right;
-    }
-
-    @media (min-width: $screen-xl) {
       flex-basis: auto;
+      text-align: right;
     }
   }
 
@@ -138,5 +161,19 @@
         padding-right: 24px;
       }
     }
+  }
+
+  &--slideUp {
+    // transform: translateY(-116px);
+    // transition: transform .5s ease-out;
+
+    // @media (min-width: $screen-xxl) {
+    //   transform: translateY(-90px);
+    // }
+  }
+
+  &--slideDown {
+    // transform: translateY(0);
+    // transition: transform .5s ease-out;
   }
 }
