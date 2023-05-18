@@ -27,70 +27,7 @@
 <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
   <div class="page__inner">
     <div class="page__content">
-      <div class="page-header__wrapper">
-        <header id="header" class="container  page-header">
-          <div class="page-header__logo-col">
-            <span class="logo">
-              <img class="logo__icon-img" src="img/icon-logo.svg" alt="Eye icon" width="29" height="20">
-              <img class="logo__main-img" src="img/index-logo.svg" alt="Index logo" width="500" height="32">
-            </span>
-          </div>
-          <!-- <div class="page-header__dixi-col">
-            <span>
-              <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">
-            </span>
-          </div> -->
-          <div class="page-header__download-col">
-            <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">
-              <span>
-                <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>
-              </span>
-              <span>Отримати таблиці індикаторів</span>
-            </button>
-          </div>
-          <div class="page-header__lang-col">
-            <ul class="list-nostyled  lang-switcher">
-              <li class="lang-switcher__item  active">
-                <a href="#" class="lang-switcher__link">Укр</a>
-              </li>
-              <li class="lang-switcher__item">
-                <a href="#" class="lang-switcher__link">Eng</a>
-              </li>
-            </ul>
-            <button class="burger" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </div>
-          <div id="collapseNav" class="anchor-nav  collapse">
-            <ul class="list-nostyled  anchor-nav__list">
-              <li>
-                <a href="#goal" class="scroll-link" data-scroll-link>Яка мета Індексу?</a>
-              </li>
-              <li>
-                <a href="#years-index" class="scroll-link" data-scroll-link>Індекс по рокам</a>
-              </li>
-              <li>
-                <a href="#category-index" class="scroll-link" data-scroll-link>Оцінки прозорості за категоріями</a>
-              </li>
-              <li>
-                <a href="#category-analysis" class="scroll-link" data-scroll-link>Аналіз за категоріями</a>
-              </li>
-              <li>
-                <a href="#transparency-score" class="scroll-link" data-scroll-link>Оцінки прозорості за секторами</a>
-              </li>
-              <li>
-                <a href="#different-authorities" class="scroll-link" data-scroll-link>Органи влади</a>
-              </li>
-              <li>
-                <a href="#index-structure" class="scroll-link" data-scroll-link>Структура індексу прозорості</a>
-              </li>
-              <li>
-                <a href="#getTableModal" data-toggle="modal" data-target="#getTableModal">Завантажити індикатори</a>
-              </li>
-            </ul>
-          </div>
-        </header>
-      </div>
+      <div class="page-header__wrapper">        <header id="header" class="container  page-header">          <div class="page-header__logo-col">            <span class="logo">              <img class="logo__icon-img" src="img/icon-logo.svg" alt="Eye icon" width="29" height="20">              <img class="logo__main-img" src="img/index-logo.svg" alt="Index logo" width="500" height="32">            </span>          </div>          <!-- <div class="page-header__dixi-col">            <span>              <img src="img/dixi-group.png" alt="Dixigroup logo" width="135" height="32">            </span>          </div> -->          <div class="page-header__download-col">            <button class="page-header__download-btn" type="button" data-toggle="modal" data-target="#getTableModal">              <span>                <svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>              </span>              <span>Отримати таблиці індикаторів</span>            </button>          </div>          <div class="page-header__lang-col">            <ul class="list-nostyled  lang-switcher">              <li class="lang-switcher__item  active">                <a href="#" class="lang-switcher__link">Укр</a>              </li>              <li class="lang-switcher__item">                <a href="#" class="lang-switcher__link">Eng</a>              </li>            </ul>            <button class="burger" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav">              <span class="visually-hidden">Открыть меню</span>            </button>          </div>          <!--DEV          @ @include('blocks/anchor-nav/anchor-nav.html')          -->          <div id="collapseNav" class="anchor-nav  collapse">            <ul class="list-nostyled  anchor-nav__list">              <li>                <a href="#goal" class="scroll-link" data-scroll-link>Яка мета Індексу?</a>              </li>              <li>                <a href="#years-index" class="scroll-link" data-scroll-link>Індекс по рокам</a>              </li>              <li>                <a href="#category-index" class="scroll-link" data-scroll-link>Оцінки прозорості за категоріями</a>              </li>              <li>                <a href="#category-analysis" class="scroll-link" data-scroll-link>Аналіз за категоріями</a>              </li>              <li>                <a href="#transparency-score" class="scroll-link" data-scroll-link>Оцінки прозорості за секторами</a>              </li>              <li>                <a href="#different-authorities" class="scroll-link" data-scroll-link>Органи влади</a>              </li>              <li>                <a href="#index-structure" class="scroll-link" data-scroll-link>Структура індексу прозорості</a>              </li>              <li>                <a href="#getTableModal" data-toggle="modal" data-target="#getTableModal">Завантажити індикатори</a>              </li>            </ul>          </div>        </header>      </div>
       <main>
         <div class="container  main-content">
           <section class="intro">
@@ -480,6 +417,24 @@
                   </picture>
                 </a>
                 <p class="years-transparency-index__descr"><span>2019.pdf</span></p>
+              </div>
+              <div class="years-transparency-index__col">
+                <a href="#" class="years-transparency-index__img" title="Заголовок 3">
+                  <picture>
+                    <source srcset="img/transparency-index-2020.webp" type="image/webp">
+                    <img src="img/transparency-index-2020.jpg" alt="Описание" width="447" height="518" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+                <p class="years-transparency-index__descr"><span>2020.pdf</span></p>
+              </div>
+              <div class="years-transparency-index__col">
+                <a href="#" class="years-transparency-index__img" title="Заголовок 3">
+                  <picture>
+                    <source srcset="img/transparency-index-2020.webp" type="image/webp">
+                    <img src="img/transparency-index-2020.jpg" alt="Описание" width="447" height="518" loading="lazy" decoding="async">
+                  </picture>
+                </a>
+                <p class="years-transparency-index__descr"><span>2020.pdf</span></p>
               </div>
               <div class="years-transparency-index__col">
                 <a href="#" class="years-transparency-index__img" title="Заголовок 3">
