@@ -5,25 +5,40 @@
   display: inline-flex;
   align-items: center;
 
+  @media (max-width: $screen-md - 1) {
+    justify-content: center;
+  }
+
   &__main-img {
-    max-width: 300px;
+    flex: 0 1;
+    width: 245px;
+    //max-width: 270px;
+
+    @media (min-width: 360px) {
+      width: 270px;
+    }
+
+    @media (min-width: 412px) {
+      width: 300px;
+    }
 
     @media (min-width: $screen-md) {
-      max-width: 375px;
+      width: 375px;
     }
 
     @media (min-width: $screen-xxl) {
-      max-width: 500px;
+      width: 500px;
     }
   }
 
   &__icon-img {
+    flex: 0 0 29px;
     width: 29px;
     height: 20px;
     margin-right: 16px;
 
-    @media (max-width: $screen-xxl - 1) {
-      display: none;
-    }
+    // @media (max-width: $screen-xxl - 1) {
+    //   display: none;
+    // }
   }
 }
