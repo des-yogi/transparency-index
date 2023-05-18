@@ -370,6 +370,13 @@ a {
   }
 }
 
+.tableWrapper table.dataTable.no-footer {
+
+  td:last-child {
+    width: 30% !important;
+  }
+}
+
 .a-plus,
 .a,
 .b-plus,
